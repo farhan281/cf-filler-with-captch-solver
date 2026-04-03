@@ -90,6 +90,14 @@ function tick() {
   if (newUrls.length) {
     fs.appendFileSync(URLS_FILE, newUrls.join('\n') + '\n', 'utf8');
     console.log(`\n➕ ${newUrls.length} new URLs added to queue`);
+  }
+  // Start filler if there are pending URLs (new or existing)
+  const pending = fs.existsSync(URLS_FILE)
+    ? fs.readFileSync(URLS_FILE, 'utf8').split('\n').map(l => l.trim()).filter(Boolean)
+    : [];
+  const filled = getFilledUrls();
+  const hasPending = pending.some(u => !filled.has(u));
+  if (hasPending) {
     runFiller();
   } else {
     process.stdout.write('.');
