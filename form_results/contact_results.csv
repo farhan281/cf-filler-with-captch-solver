@@ -1030,3 +1030,5 @@ http://brandsalon.com/,Failed,No contact form detected,Loaded,14.9,Opened,Not fo
 http://dhdchicago.com/,Failed,Submitted but no confirmation detected,Loaded,5.6,Opened,Found,7,"first_name,last_name,company,email,phone,message,select:Interest","full_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],No confirmation
 http://www.morningwalkusa.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 http://grassrootsbranding.com/,Failed,Submitted but no confirmation detected,Loaded,2.8,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'CAPABILITIES' (score=45),No confirmation
+http://www.devarj.com/,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
