@@ -1002,3 +1002,4 @@ https://mnml.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://hbportal.co,Failed,No contact form detected,Loaded,14.8,Opened,Not found,,,,,,,
 https://w33.shkalix.com/contact/,Success,Verified thank-you / redirect,Loaded,11.0,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://abncircle.com,Failed,No contact form detected,Loaded,18.6,Not found,Not found,,,,,,,
+https://alwayscodedfresh.com,Success,Verified thank-you / redirect,Loaded,10.0,Opened,Found,6,"full_name,email,company,phone,select:Project Budget,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=105),Success detected
