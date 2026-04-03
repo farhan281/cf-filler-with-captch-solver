@@ -372,7 +372,7 @@ async function scrapeUnified() {
             try {
                 // Go to Google Maps and perform search
                 await page.goto('https://www.google.com/maps', { waitUntil: 'domcontentloaded' });
-                await page.waitForTimeout(1000);
+                await new Promise(r => setTimeout(r, 1000));
                 
                 // Find and click search box
                 const searchBox = await page.waitForSelector('input.UGojuc, input[name="q"], input[id="UGojuc"]', { timeout: 10000 });
@@ -385,11 +385,11 @@ async function scrapeUnified() {
                 
                 // Press Enter or click search button
                 await page.keyboard.press('Enter');
-                await page.waitForTimeout(3000);
+                await new Promise(r => setTimeout(r, 3000));
                 
                 // Wait for results to load
                 await page.waitForSelector('div[role="main"]', { timeout: 10000 });
-                await page.waitForTimeout(1500);
+                await new Promise(r => setTimeout(r, 1500));
                 
                 // Scroll to load all results
                 console.log('📜 Scrolling to load all results...');
@@ -437,11 +437,11 @@ async function scrapeUnified() {
                     });
                     
                     // Wait for loading
-                    await page.waitForTimeout(2500);
+                    await new Promise(r => setTimeout(r, 2500));
                     
                     // Trigger more loading by pressing Page Down
                     await page.keyboard.press('PageDown');
-                    await page.waitForTimeout(1000);
+                    await new Promise(r => setTimeout(r, 1000));
                     
                     // Count current results
                     currentCount = await page.evaluate(() => {
@@ -463,7 +463,7 @@ async function scrapeUnified() {
                 } while (scrollAttempts < maxScrolls && noChangeCount < maxNoChange);
                 
                 console.log(`✅ Scrolling complete. Final count: ${currentCount}`);
-                await page.waitForTimeout(1000);
+                await new Promise(r => setTimeout(r, 1000));
                 
                 const companies = await page.evaluate(() => {
                     const results = [];
@@ -600,7 +600,7 @@ async function scrapeUnified() {
                         // Go back to search results if not on first company
                         if (j > 0) {
                             await page.goBack();
-                            await page.waitForTimeout(1500);
+                            await new Promise(r => setTimeout(r, 1500));
                         }
                         
                         // Click on the company to open side panel
@@ -633,7 +633,7 @@ async function scrapeUnified() {
                             try {
                                 console.log(`🔗 Navigating directly to: ${company.name}`);
                                 await page.goto(company.mapsUrl, { waitUntil: 'domcontentloaded', timeout: 8000 });
-                                await page.waitForTimeout(2000);
+                                await new Promise(r => setTimeout(r, 2000));
                             } catch (error) {
                                 console.log(`❌ Failed to navigate to ${company.name}: ${error.message}`);
                                 globalIndex++;
@@ -646,7 +646,7 @@ async function scrapeUnified() {
                         }
                         
                         // Wait for side panel to load and check if it opened
-                        await page.waitForTimeout(2500);
+                        await new Promise(r => setTimeout(r, 2500));
                         
                         // Verify side panel loaded by checking for detailed content
                         const sidePanelLoaded = await page.evaluate(() => {
@@ -756,7 +756,7 @@ async function scrapeUnified() {
                         // Go back to search results on error
                         try {
                             await page.goBack();
-                            await page.waitForTimeout(1500);
+                            await new Promise(r => setTimeout(r, 1500));
                         } catch (e) {
                             console.log('Could not go back, continuing...');
                         }
@@ -836,7 +836,7 @@ async function scrapeUnified() {
                     }
                     
                     globalIndex++; // Increment global counter
-                    await page.waitForTimeout(500);
+                    await new Promise(r => setTimeout(r, 500));
                 }
                 
                 totalCompanies += companies.length;
@@ -850,7 +850,7 @@ async function scrapeUnified() {
                 console.log(`❌ Error in search: ${error.message}`);
             }
             
-            await page.waitForTimeout(2000);
+            await new Promise(r => setTimeout(r, 2000));
         }
         
     } finally {
