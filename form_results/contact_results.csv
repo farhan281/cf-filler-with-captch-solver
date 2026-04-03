@@ -1000,3 +1000,4 @@ https://multipleinc.com/contact,Success,Verified thank-you / redirect,Loaded,13.
 https://www.techgropse.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://mnml.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://hbportal.co,Failed,No contact form detected,Loaded,14.8,Opened,Not found,,,,,,,
+https://w33.shkalix.com/contact/,Success,Verified thank-you / redirect,Loaded,11.0,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
