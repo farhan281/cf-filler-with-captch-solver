@@ -1007,3 +1007,4 @@ https://fuzzymath.com/contact/,Success,Verified thank-you / redirect,Loaded,8.0,
 https://www.madebyeightyseven.com/contact,Failed,No form fields detected,Loaded,4.8,Opened,Found,0,,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,message,budget,address",,,,
 https://nicercollaborative.com/,Failed,No contact form detected,Loaded,3.8,Opened,Not found,,,,,,,
 https://www.everydaysocial.co/,Failed,No contact form detected,Loaded,8.3,Opened,Not found,,,,,,,
+https://adagetechnologies.com,Failed,Submit failed: No submit button,Loaded,1.2,Opened,Found,6,"first_name,last_name,email,phone,select:Industry,message","full_name,company,website,job_title,subject,budget,address",,Not present,No submit button found,No success detected
