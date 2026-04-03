@@ -1015,3 +1015,4 @@ https://plego.com/contact-us/,Failed,Submitted but no confirmation detected,Load
 https://dejamakes.com,Failed,Submitted but no confirmation detected,Loaded,13.6,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,form.submit(): form[0],No confirmation
 https://offers.hubspot.com/contact-sales?hubs_signup-url=www.hubspot.com%2F&hubs_signup-cta=nav-utility-contactsales&hubs_content=www.hubspot.com%2F&hubs_content-cta=nav-utility-contactsales&wfoid=127571664e.1775216927,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.kitelytech.com/contact,Failed,Submitted but no confirmation detected,Loaded,2.4,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Set Up a Call' (score=70),No confirmation
+https://llobe.com/,Failed,No contact form detected,Loaded,3.3,Opened,Not found,,,,,,,
