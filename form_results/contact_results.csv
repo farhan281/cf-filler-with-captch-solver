@@ -984,3 +984,4 @@ https://brandgenius.co,Skipped,"""unknown error: net::ERR_SSL_VERSION_OR_CIPHER_
 "  (Session info: chrome=146.0.7680.177)""",NetworkError,,,,,,,,,,,,
 https://dialoguetheory.com/,Success,Verified thank-you / redirect,Loaded,3.5,Opened,Found,7,"""first_name",last_name,job_title,company,email,phone
 https://lizardoagency.com/contact/,Partial,Submitted but missing:  name,Loaded,7.3,Opened,Found,3,"email,select:Project Type,message","first_name,last_name,full_name,phone,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send Email' (score=95),Success detected
+https://www.onedesigncompany.com/contact,Partial,Submitted but missing:  name,Loaded,5.6,Opened,Found,4,"last_name,company,email,message","first_name,full_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=120),Success detected
