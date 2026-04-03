@@ -1034,3 +1034,4 @@ http://www.devarj.com/,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://purposebrand.com/,Failed,Submitted but no confirmation detected,Loaded,4.0,Opened,Found,5,"first_name,last_name,company,phone,email","full_name,website,job_title,subject,message,budget,address",,Not present,Clicked: 'send a short message →' (score=110),No confirmation
 https://www.burrell.com/,Failed,No contact form detected,Loaded,6.5,Opened,Not found,,,,,,,
+http://www.killianbranding.com/,Success,Verified thank-you / redirect,Loaded,10.0,Opened,Found,4,"full_name,email,company,website","first_name,last_name,phone,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
