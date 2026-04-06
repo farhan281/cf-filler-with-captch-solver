@@ -56,7 +56,7 @@ async function sbSolve(url) {
       const i = _sbQueue.findIndex(r => r.resolve === resolve);
       if (i !== -1) _sbQueue.splice(i, 1);
       resolve('');
-    }, 120000);
+    }, 180000); // 3 min timeout
     _sbQueue.push({ resolve, timer });
     _sbProc.stdin.write(url + '\n');
   });
