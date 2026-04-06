@@ -123,23 +123,25 @@ async function findAnchorIframe(driver) {
 
 async function findChallengeIframe(driver) {
   await sw(driver);
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 20; i++) {
     try {
       const frames = await driver.findElements(By.css('iframe[src*="hcaptcha"]'));
       for (const f of frames) {
-        if (!await f.isDisplayed()) continue;
         try {
-          await driver.switchTo().frame(f);
-          const hasPrompt = await driver.executeScript(
-            'return !!document.querySelector("h2.prompt-text,.prompt-text")');
-          await sw(driver);
-          if (hasPrompt) return f;
-        } catch (_) { await sw(driver); }
+          const src = await f.getAttribute('src');
+          // Challenge iframe has #frame=challenge in src
+          if (src && src.includes('challenge') && await f.isDisplayed()) return f;
+        } catch (_) {}
       }
-      // XPath for challenge iframe
-      const xf = await driver.findElements(
-        By.xpath('//iframe[contains(@src,"hcaptcha") and contains(@src,"challenge")]'));
-      for (const f of xf) { if (await f.isDisplayed()) return f; }
+      // Fallback: any hcaptcha iframe that is not the checkbox
+      if (frames.length >= 2) {
+        for (const f of frames) {
+          try {
+            const src = await f.getAttribute('src');
+            if (src && !src.includes('checkbox') && await f.isDisplayed()) return f;
+          } catch (_) {}
+        }
+      }
     } catch (_) {}
     await sleep(500);
   }
