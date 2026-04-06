@@ -65,6 +65,18 @@ async function handleCaptcha(driver, record, stage, formContext, timeout) {
       return 'retry';
     }
 
+    if (isHcaptcha) {
+      console.log(`   🤖 Solving hCaptcha at ${stage}...`);
+      if (await solveHcaptcha(driver)) {
+        record.captcha_status = `Auto-solved at ${stage}: ${reason}`;
+        return 'clear';
+      }
+      console.log(`   ⚠️ hCaptcha not solved at ${stage}`);
+      record.captcha_status = `Not solved at ${stage}: ${reason}`;
+      record.details = `${reason} not solved at ${stage}`;
+      return 'retry';
+    }
+
     if (isRecaptcha) {
       if (await solveRecaptchaAudio(driver)) {
         record.captcha_status = `Auto-solved at ${stage}: ${reason}`;
