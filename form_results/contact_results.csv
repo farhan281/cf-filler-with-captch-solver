@@ -1061,3 +1061,4 @@ https://growthchart.co.in/,Failed,No contact form detected,Loaded,1.9,Opened,Not
 https://growthguide.co.in/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.1,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send message' (score=120),No confirmation
 https://growthmarketingco.com/contact,Failed,No contact form detected,Loaded,3.4,Opened,Not found,,,,,,,
 https://royalgrowthmarketing.com/contact,Failed,No contact form detected,Loaded,1.7,Opened,Not found,,,,,,,
+https://www.wearegrowth.co/contact,Success,Verified thank-you / redirect,Loaded,2.5,Opened,Found,9,"first_name,last_name,email,phone,job_title,company,select:Average Monthly Spend,select:Annual Revenue,select:How did you hear about us?","full_name,website,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=115),Success detected
