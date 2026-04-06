@@ -1427,3 +1427,4 @@ Digital Marketing
 Visual Prodiction
 Animation & VFX,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'GET IN TOUCH' (score=105),No confirmation
 https://ohpartners.com/contact-us/,Success,Success detected (submit not tracked),Loaded,6.0,Opened,Found,5,"email,first_name,last_name,select:How Can We Help?*,message","full_name,phone,company,website,job_title,subject,budget,address",,Not present,No submit button found,Success detected
+https://local-one.com,Success,Verified thank-you / redirect,Loaded,4.0,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],Success detected
