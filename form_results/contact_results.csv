@@ -1410,3 +1410,4 @@ https://goldlevelmarketing.com/contact/,Failed,Submitted but no confirmation det
 https://www.feliceagency.com/contact,Failed,Submit failed: No submit button,Loaded,4.4,Opened,Found,1,full_name,"first_name,last_name,email,phone,company,website,job_title,subject,message,budget,address",,Not present,No submit button found,No success detected
 https://www.gorillawebtactics.com/,Failed,No contact form detected,Loaded,6.5,Opened,Not found,,,,,,,
 https://ninemediacenter.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://starstrucksolutions.com/,Failed,No form fields detected,Loaded,7.5,Opened,Found,0,,,,,,
