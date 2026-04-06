@@ -1257,3 +1257,4 @@ https://www.thecontent.haus/,Failed,No contact form detected,Loaded,11.1,Opened,
 https://cangodigital.net,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://unlockhealth.com,Failed,No contact form detected,Loaded,1.5,Opened,Not found,,,,,,,
+https://focuscopy.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
