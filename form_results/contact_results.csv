@@ -1122,3 +1122,4 @@ https://baalspots.com/contact/,Success,Verified thank-you / redirect,Loaded,2.4,
 https://runrex.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://broadly.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.9,Opened,Found,6,"first_name,last_name,company,email,select:Industry,phone","full_name,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Get in touch' (score=105),No confirmation
+https://herocrm.com/,Failed,No contact form detected,Loaded,1.2,Opened,Not found,,,,,,,
