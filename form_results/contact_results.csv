@@ -1123,3 +1123,6 @@ https://runrex.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMAT
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://broadly.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.9,Opened,Found,6,"first_name,last_name,company,email,select:Industry,phone","full_name,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Get in touch' (score=105),No confirmation
 https://herocrm.com/,Failed,No contact form detected,Loaded,1.2,Opened,Not found,,,,,,,
+https://armavita.com/#contact,Success,Verified thank-you / redirect,Loaded,1.8,Opened,Found,5,"first_name,last_name,email,company,message","full_name,phone,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],Success detected
+https://www.infintechdesigns.com/contact/,Failed,No contact form detected,Loaded,3.1,Opened,Not found,,,,,,,
+https://www.smallscreenproducer.com/contact-us/,Failed,No contact form detected,Loaded,6.1,Opened,Not found,,,,,,,
