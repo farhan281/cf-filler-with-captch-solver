@@ -1297,3 +1297,4 @@ https://www.ariacreative.studio/contact-us,Failed,No form fields detected,Loaded
 https://texaswebdesign.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.7,Opened,Found,7,"full_name,email,phone,company,website,select:How can we help?(Required),message","first_name,last_name,job_title,subject,budget,address",,Not present,Clicked: 'SEND IT' (score=120),Success detected
 https://oneteninnovations.com/contact-us/,Success,Verified thank-you / redirect,Loaded,5.9,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
 https://kellywm.com/home-copy/#joinnow,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://logoladz.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
