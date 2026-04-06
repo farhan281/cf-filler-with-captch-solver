@@ -1259,3 +1259,4 @@ https://cangodigital.net,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_
 https://unlockhealth.com,Failed,No contact form detected,Loaded,1.5,Opened,Not found,,,,,,,
 https://focuscopy.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://webnhubs.com/contact-us/,Success,Verified thank-you / redirect,Loaded,4.0,Opened,Found,6,"first_name,last_name,email,phone,company,message","full_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit' (score=120),Success detected
+https://alldayweb.com/contact.php,Success,Verified thank-you / redirect,Loaded,6.5,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'SEND MESSAGE' (score=105),Success detected
