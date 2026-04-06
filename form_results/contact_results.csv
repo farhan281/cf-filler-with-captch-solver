@@ -1147,3 +1147,7 @@ https://www.armandoortaseo.com/contact-2/,Success,Verified thank-you / redirect,
 https://realmarketingusa.com/contact-us/,Failed,No contact form detected,Loaded,6.7,Opened,Not found,,,,,,,
 https://mastodonmarketing.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.confidant-co.com/,Failed,No contact form detected,Loaded,8.8,Opened,Not found,,,,,,,
+https://alphacomarketing.com/contact/,Failed,Submitted but no confirmation detected,Loaded,11.7,Opened,Found,5,"first_name,company,website,email,phone","last_name,full_name,job_title,subject,message,budget,address",,Not present,Clicked: 'Schedule My Free Consultation' (score=110),No confirmation
+https://www.dymentions.com/contact/,Success,Verified thank-you / redirect,Loaded,9.6,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit' (score=120),Success detected
+https://castnetdigital.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
