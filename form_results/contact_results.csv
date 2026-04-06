@@ -1248,3 +1248,4 @@ https://artgro.com,Failed,hCaptcha iframe not solved at pre-submit,Loaded,15.4,O
 https://www.platinumblack.com/contact,Success,Verified thank-you / redirect,Loaded,9.3,Opened,Found,6,"first_name,last_name,company,email,select:Inquiry Type,message","full_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'Let's connect' (score=85),Success detected
 https://hendricks.ai/contact,Skipped,Submitted but no confirmation detected,Loaded,2.6,Opened,Found,5,"first_name,email,company,select:Primary Challenge,message","last_name,full_name,phone,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=105),No confirmation
 https://www.shoutnhike.com/contact-us/,Failed,No contact form detected,Loaded,6.3,Opened,Not found,,,,,,,
+https://thisisfokus.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
