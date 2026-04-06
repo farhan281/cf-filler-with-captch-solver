@@ -1117,3 +1117,7 @@ https://learn.gobonafide.com/schedule-a-call,Failed,No contact form detected,Loa
 https://owdt.com/contact/,Success,Verified thank-you / redirect,Loaded,3.0,Opened,Found,5,"full_name,phone,email,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://www.theideafarm.net/contact,Failed,No contact form detected,Loaded,3.2,Opened,Not found,,,,,,,
 https://www.seoimpactpros.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.4,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://theblacksheepagency.com,Failed,No contact form detected,Loaded,1.3,Opened,Not found,,,,,,,
+https://baalspots.com/contact/,Success,Verified thank-you / redirect,Loaded,2.4,Opened,Found,6,"first_name,last_name,email,phone,website,message","full_name,company,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=120),Success detected
+https://runrex.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
