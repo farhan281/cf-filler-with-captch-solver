@@ -1240,3 +1240,7 @@ https://www.stan.store,Failed,No contact form detected,Loaded,4.0,Not found,Not 
 https://blueprintcreativegroup.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://mvpdigitalworld.com,Failed,Submitted but no confirmation detected,Loaded,5.4,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),No confirmation
 https://leadorigin.com/contact-us/,Success,Verified thank-you / redirect,Loaded,5.4,Opened,Found,7,"first_name,last_name,email,phone,company,website,select:How Did You Hear About Us?","full_name,job_title,subject,message,budget,address",,Not present,Clicked: 'SUBMIT' (score=100),Success detected
+https://www.public-content.com/#,Failed,No contact form detected,Loaded,5.5,Opened,Not found,,,,,,,
+https://bkgropro.com,Failed,No contact form detected,Loaded,5.3,Opened,Not found,,,,,,,
+https://agencyintelligence.co,Failed,Submitted but no confirmation detected,Loaded,2.4,Opened,Found,6,"first_name,last_name,email,company,website,message","full_name,phone,job_title,subject,budget,address",,Not present,Clicked: 'Submit Form' (score=115),No confirmation
+https://www.spotteradvertising.com/contact,Failed,Submitted but no confirmation detected,Loaded,3.4,Opened,Found,5,"first_name,last_name,company,email,phone","full_name,website,job_title,subject,message,budget,address",,Not present,form.submit(): form[0],No confirmation
