@@ -1062,3 +1062,4 @@ https://growthguide.co.in/contact-us/,Failed,Submitted but no confirmation detec
 https://growthmarketingco.com/contact,Failed,No contact form detected,Loaded,3.4,Opened,Not found,,,,,,,
 https://royalgrowthmarketing.com/contact,Failed,No contact form detected,Loaded,1.7,Opened,Not found,,,,,,,
 https://www.wearegrowth.co/contact,Success,Verified thank-you / redirect,Loaded,2.5,Opened,Found,9,"first_name,last_name,email,phone,job_title,company,select:Average Monthly Spend,select:Annual Revenue,select:How did you hear about us?","full_name,website,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=115),Success detected
+https://thegrowthshark.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.1,Opened,Found,5,"full_name,email,company,subject,message","first_name,last_name,phone,website,job_title,budget,address",,Not present,form.submit(): form[0],Success detected
