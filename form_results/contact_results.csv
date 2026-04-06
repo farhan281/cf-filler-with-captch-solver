@@ -1294,3 +1294,4 @@ https://morandom.design/,Failed,No contact form detected,Loaded,5.5,Opened,Not f
 https://richardlerma.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://logohouston.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.ariacreative.studio/contact-us,Failed,No form fields detected,Loaded,3.7,Opened,Found,0,,,,,,
+https://texaswebdesign.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.7,Opened,Found,7,"full_name,email,phone,company,website,select:How can we help?(Required),message","first_name,last_name,job_title,subject,budget,address",,Not present,Clicked: 'SEND IT' (score=120),Success detected
