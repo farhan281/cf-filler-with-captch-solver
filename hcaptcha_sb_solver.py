@@ -3,20 +3,16 @@ SeleniumBase CDP hCaptcha solver.
 Uses CDP Input.dispatchMouseEvent (isTrusted=true) to click hCaptcha checkbox.
 Protocol: reads URL from stdin, writes token to stdout
 """
-import sys, time, asyncio
+import sys, time, asyncio, os
 
 sys.stderr.write("🔄 Starting hCaptcha CDP solver...\n")
 sys.stderr.flush()
 
-try:
-    from sbvirtualdisplay import Display
-    _display = Display(visible=0, size=(1920, 1080))
-    _display.start()
-    sys.stderr.write("✅ Virtual display started\n")
-    sys.stderr.flush()
-except Exception as e:
-    sys.stderr.write(f"⚠️ Virtual display: {e}\n")
-    sys.stderr.flush()
+# Use existing display
+if not os.environ.get('DISPLAY'):
+    os.environ['DISPLAY'] = ':0'
+sys.stderr.write(f"✅ Using display: {os.environ.get('DISPLAY')}\n")
+sys.stderr.flush()
 
 from seleniumbase import sb_cdp
 
