@@ -1355,3 +1355,4 @@ https://phoenixbpm.in/contact,Failed,,Loaded,1.8,Opened,Found,3,"first_name,emai
 https://accodelades.com/contact/,Success,Verified thank-you / redirect,Loaded,5.8,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://linkhelpers.com,Failed,No contact form detected,Loaded,1.6,Opened,Not found,,,,,,,
 https://www.digitaleer.com/contact/,Success,Verified thank-you / redirect,Loaded,7.2,Opened,Found,6,"first_name,last_name,email,phone,website,message","full_name,company,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=115),Success detected
+https://affordableimage.com/contact/,Failed,No contact form detected,Loaded,6.0,Opened,Not found,,,,,,,
