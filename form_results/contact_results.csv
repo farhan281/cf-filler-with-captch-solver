@@ -1082,3 +1082,4 @@ https://adsrole.com/contact-us/,Failed,Submitted but no confirmation detected,Lo
 *,select:Country
 *,message","first_name,full_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit Form' (score=105),No confirmation
 https://symphonyadvertising.com,Success,Verified thank-you / redirect,Loaded,14.2,Opened,Found,9,"full_name,company,select:What Best Describes Your Business?(Required),select:Years in Business(Required),select:Monthly Marketing Budget(Required),select:When Are You Looking to Start?(Required),phone,email,message","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],Success detected
+https://gbcdigitalmarketing.com/contact/,Failed,,Loaded,12.3,Opened,Found,1,message,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
