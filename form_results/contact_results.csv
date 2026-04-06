@@ -1367,3 +1367,40 @@ https://ecreations.net/contact/,Failed,Submitted but no confirmation detected,Lo
 https://scottsdaleseocompanies.com,Success,Verified thank-you / redirect,Loaded,14.7,Opened,Found,5,"full_name,email,phone,website,message","first_name,last_name,company,job_title,subject,budget,address",,Auto-solved at pre-submit: Image CAPTCHA,Clicked: 'Submit' (score=105),Success detected
 https://advereowebdesign.com,Failed,No contact form detected,Loaded,1.6,Opened,Not found,,,,,,,
 https://www.qltech.com.au/contact-us,Failed,Submitted but no confirmation detected,Loaded,19.3,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=65),No confirmation
+https://webgrowth.io/contact,Success,Verified thank-you / redirect,Loaded,15.0,Opened,Found,5,"first_name,last_name,email,phone,website","full_name,company,job_title,subject,message,budget,address",,Not present,Clicked: 'Get Your Free Consultation' (score=90),Success detected
+https://firebirdseowebdesign.com,Failed,No contact form detected,Loaded,2.4,Opened,Not found,,,,,,,
+https://www.rule29.com/contact,Failed,Submitted but no confirmation detected,Loaded,5.3,Opened,Found,7,"first_name,last_name,email,phone,company,subject,message","full_name,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=105),No confirmation
+https://d1g.it/contact-us/,Success,Verified thank-you / redirect,Loaded,8.5,Opened,Found,5,"full_name,company,phone,email,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=105),Success detected
+https://phoenixseogeek.com/contact/,Success,Verified thank-you / redirect,Loaded,6.1,Opened,Found,8,"first_name,last_name,email,phone,company,website,subject,message","full_name,job_title,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],Success detected
+https://www.oxy.co/contact,Failed,Submitted but no confirmation detected,Loaded,10.1,Opened,Found,2,"email,message","first_name,last_name,full_name,phone,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://www.feedyourfeed.in/,Failed,No contact form detected,Loaded,4.5,Opened,Not found,,,,,,,
+https://thestockmedia.com/contact-us.html,Success,Verified thank-you / redirect,Loaded,11.6,Opened,Found,5,"full_name,email,phone,address,message","first_name,last_name,company,website,job_title,subject,budget",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://bhagyawebtechnologies.in/contact.php,Success,Verified thank-you / redirect,Loaded,6.2,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=105),Success detected
+https://dmddigitalseomarketingagency.com,Success,Verified thank-you / redirect,Loaded,7.2,Opened,Found,7,"first_name,last_name,phone,company,email,website,message","full_name,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=100),Success detected
+https://pointandclick.com,Success,Verified thank-you / redirect,Loaded,9.3,Opened,Found,5,"full_name,email,phone,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://foxdesignsstudio.com,Failed,No form fields detected,Loaded,13.9,Opened,Found,0,,,,,,
+https://iqmutah.com,Failed,No contact form detected,Loaded,7.4,Opened,Not found,,,,,,,
+https://liquetcreative.com/contact-us/,Success,Verified thank-you / redirect,Loaded,6.6,Opened,Found,5,"first_name,email,phone,company,select:WHAT CAN WE HELP YOU WITH(REQUIRED)","last_name,full_name,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Get Started' (score=120),Success detected
+https://thinkpixa.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.websitedesigninahmedabad.com/contact-us.html,Failed,No form fields detected,Loaded,8.1,Opened,Found,0,,,,,,
+https://www.nextsavy.com/contact,Success,Verified thank-you / redirect,Loaded,7.7,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Get In Touch' (score=105),Success detected
+https://www.designgroove.io/contact,Success,Verified thank-you / redirect,Loaded,4.5,Opened,Found,4,"full_name,email,company,message","first_name,last_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=105),Success detected
+https://phoenixcreativehub.in/contact/,Success,Verified thank-you / redirect,Loaded,5.9,Opened,Found,6,"first_name,company,email,phone,select:How Can We Help You?,message","last_name,full_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=105),Success detected
+https://seoleadgeek.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://mybizniche.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.phoenixpixels.com/contact-us/,Success,Verified thank-you / redirect,Loaded,17.2,Opened,Found,5,"full_name,email,phone,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
+https://zcal.co/,Failed,No contact form detected,Loaded,3.5,Opened,Not found,,,,,,,
+https://todaymediabusiness.com/contact,Failed,Submitted but no confirmation detected,Loaded,8.0,Opened,Found,5,"full_name,phone,email,subject,message","first_name,last_name,company,website,job_title,budget,address",,Auto-solved at post-submit: Image CAPTCHA,form.submit(): form[0],No confirmation
+https://woow.ooo/contact/,Failed,Submitted but no confirmation detected,Loaded,6.7,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
+https://lt.agency,Failed,No form fields detected,Loaded,19.7,Opened,Found,0,,,,,,
+https://divineseoservices.comcontact/,Failed,No contact form detected,Loaded,0.9,Opened,Not found,,,,,,,
+https://signamarketing.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://venzmedia.com,Skipped,Slow: 20.3s,Slow,20.3,,,,,,,,,
+https://redliodesigns.com/contact,Failed,Submitted but no confirmation detected,Loaded,2.8,Opened,Found,5,"full_name,email,company,phone,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=120),No confirmation
+https://www.nextdesign.in/contactus.php,Failed,No contact form detected,Loaded,7.6,Opened,Not found,,,,,,,
+https://ave25.com/contact.html,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.logodesignphoenix.com/,Failed,No contact form detected,Loaded,7.8,Opened,Not found,,,,,,,
+https://www.tensiondesign.com/contact-tension-design,Failed,Submitted but no confirmation detected,Loaded,2.4,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://phoenixwebpros.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://mywebx.tech,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
