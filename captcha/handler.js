@@ -66,15 +66,24 @@ async function handleCaptcha(driver, record, stage, formContext, timeout) {
     }
 
     if (isHcaptcha) {
-      console.log(`   🤖 Solving hCaptcha at ${stage}...`);
-      if (await solveHcaptcha(driver)) {
-        record.captcha_status = `Auto-solved at ${stage}: ${reason}`;
-        return 'clear';
+      console.log(`   🤖 hCaptcha detected at ${stage} — waiting for manual solve (${timeout/1000}s)...`);
+      // hCaptcha image challenge cannot be auto-solved without paid API
+      // Wait for manual solve
+      const deadline = Date.now() + timeout;
+      while (Date.now() < deadline) {
+        const solved = await captchaSolved(driver);
+        if (solved) {
+          console.log('      ✅ hCaptcha solved!');
+          record.captcha_status = `Solved at ${stage}: ${reason}`;
+          return 'clear';
+        }
+        await sleep(2000);
       }
-      console.log(`   ⚠️ hCaptcha not solved at ${stage}`);
+      console.log(`   ⏭️ hCaptcha not solved in time — skipping`);
+      record.status = 'Skipped';
+      record.details = `hCaptcha not solved within ${timeout/1000}s`;
       record.captcha_status = `Not solved at ${stage}: ${reason}`;
-      record.details = `${reason} not solved at ${stage}`;
-      return 'retry';
+      return 'blocked';
     }
 
     if (isRecaptcha) {
