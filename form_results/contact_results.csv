@@ -1228,3 +1228,9 @@ https://inversionsocialmgr.wixsite.com/mysite-1,Failed,No contact form detected,
 https://bolanlemedia.com/index.php/contact/,Failed,No form fields detected,Loaded,13.6,Opened,Found,0,,,,,,
 https://rebelhtx.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,4.9,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,form.submit(): form[0],No confirmation
 https://kreative-media.com/contact/,Failed,No form fields detected,Loaded,9.7,Opened,Found,0,,,,,,
+https://agentmarketingdesk.com/pages/contact,Skipped,Slow: 20.3s,Slow,20.3,,,,,,,,,
+https://adwebvertising.com/contacts/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://visitcardinal.com/contact,Success,Verified thank-you / redirect,Loaded,2.3,Opened,Found,8,"first_name,last_name,email,phone,company,website,select:PROJECT BUDGET *,message","full_name,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=105),Success detected
+https://thegridbiz.com/#home,Failed,No contact form detected,Loaded,3.7,Opened,Not found,,,,,,,
+https://viztvmedia.com/contact/,Success,Verified thank-you / redirect,Loaded,11.1,Opened,Found,5,"full_name,phone,email,select:Project Budget *,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://teamgetsocial.com,Failed,No contact form detected,Loaded,0.7,Not found,Not found,,,,,,,
