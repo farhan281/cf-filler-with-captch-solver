@@ -205,7 +205,7 @@ async function getTileImages(driver, challengeFrame) {
   try {
     await driver.switchTo().frame(challengeFrame);
     const result = await driver.executeScript(`
-      // Background-image URLs
+      // Standard 3x3/4x4 grid — background-image tiles
       var allEls = Array.from(document.querySelectorAll('[style]'));
       var imgEls = allEls.filter(function(e){
         var s = e.getAttribute('style') || '';
@@ -224,7 +224,14 @@ async function getTileImages(driver, challengeFrame) {
         return i.offsetWidth >= 30 && i.src && i.src.startsWith('http');
       });
       if (imgs.length >= 3) return { type: 'urls', data: imgs.map(function(i){ return i.src; }) };
-      return { type: 'none', data: [] };
+      // Check if this is a non-standard challenge (drag, sequence, anomaly etc.)
+      var prompt = (document.querySelector('.prompt-text')?.innerText || '').toLowerCase();
+      var isNonStandard = prompt.includes('drag') || prompt.includes('anomal') ||
+                          prompt.includes('sequence') || prompt.includes('concealed') ||
+                          prompt.includes('letter') || prompt.includes('arrow') ||
+                          prompt.includes('rotate') || prompt.includes('order') ||
+                          !document.querySelector('.task-grid');
+      return { type: isNonStandard ? 'non-standard' : 'none', data: [], prompt: prompt };
     `);
     await sw(driver);
     return result || { type: 'none', data: [] };
