@@ -9,7 +9,6 @@ sys.stderr.flush()
 
 os.environ.setdefault('DISPLAY', ':0')
 
-import nodriver as uc_nodriver
 from seleniumbase import sb_cdp
 
 def solve_hcaptcha(url: str) -> str:
