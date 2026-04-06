@@ -132,6 +132,20 @@ async function makeDriver() {
     .build();
 
   await driver.manage().setTimeouts({ pageLoad: PAGE_LOAD_TIMEOUT });
+
+  // Spoof navigator.webdriver via CDP
+  try {
+    const connection = await driver.createCDPConnection('page');
+    await connection.execute('Page.addScriptToEvaluateOnNewDocument', {
+      source: [
+        "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});",
+        "Object.defineProperty(navigator,'plugins',{get:()=>[1,2,3,4,5]});",
+        "Object.defineProperty(navigator,'languages',{get:()=>['en-US','en']});",
+        "window.chrome=window.chrome||{runtime:{}};",
+      ].join('')
+    });
+  } catch (_) {}
+
   return driver;
 }
 
