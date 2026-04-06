@@ -1078,3 +1078,6 @@ https://www.forthea.com/contact/,Failed,Submitted but no confirmation detected,L
 https://www.infinimarketing.com/get-in-touch/free-marketing-consultation,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://anytimedigitalmarketing.com,Failed,No contact form detected,Loaded,1.3,Opened,Not found,,,,,,,
 https://www.qing.agency/inquire,Failed,No contact form detected,Loaded,1.7,Opened,Not found,,,,,,,
+https://adsrole.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,9.6,Opened,Found,7,"last_name,email,company,phone,select:Which services are you interested in?
+*,select:Country
+*,message","first_name,full_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit Form' (score=105),No confirmation
