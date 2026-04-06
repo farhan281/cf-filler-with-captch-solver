@@ -1327,3 +1327,5 @@ https://www.creativecircle.com/contact-us/,Failed,No contact form detected,Loade
 https://www.adamsdavy.com/,Failed,No contact form detected,Loaded,6.6,Not found,Not found,,,,,,,
 https://factoricc.com,Failed,No contact form detected,Loaded,2.4,Opened,Not found,,,,,,,
 https://direktoadvertising.com,Failed,No contact form detected,Loaded,3.1,Opened,Not found,,,,,,,
+https://hodgsonagency.com/contact/,Failed,No contact form detected,Loaded,3.0,Opened,Not found,,,,,,,
+https://localfencemarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,5.6,Opened,Found,5,"full_name,company,email,phone,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'GET STARTED' (score=120),Success detected
