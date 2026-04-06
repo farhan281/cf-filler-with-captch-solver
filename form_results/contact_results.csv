@@ -1270,3 +1270,5 @@ https://71three.com/contact,Success,Verified thank-you / redirect,Loaded,4.6,Ope
 https://support.microsoft.com/contactus,Failed,No form fields detected,Loaded,7.0,Opened,Found,0,,,,,,
 https://www.verticalweb.com/,Success,Verified thank-you / redirect,Loaded,18.0,Opened,Found,5,"full_name,company,email,website,message","first_name,last_name,phone,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://webnotix.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://vandellaljarrah.com,Failed,No contact form detected,Loaded,1.4,Opened,Not found,,,,,,,
+https://www.logoinhours.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.3,Opened,Found,3,"first_name,email,phone","last_name,full_name,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit Form' (score=120),No confirmation
