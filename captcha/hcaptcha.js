@@ -1,77 +1,113 @@
+// captcha/hcaptcha.js
+// hCaptcha solver — Node.js side.
+// Spawns hcaptcha_solver.py (CNN) as a persistent child process,
+// then drives the hCaptcha widget via Selenium:
+//   1. Detect & click the hCaptcha checkbox
+//   2. Wait for image challenge to appear
+//   3. Read task label + fetch all tile images
+//   4. Send to Python CNN → get matching tile indices
+//   5. Click matching tiles → click Verify
+//   6. Repeat for new challenges (up to MAX_ROUNDS)
 'use strict';
 
 const { By }    = require('selenium-webdriver');
 const { spawn } = require('child_process');
 const path      = require('path');
+const fs        = require('fs');
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 function rand(a, b) { return Math.floor(Math.random() * (b - a) + a); }
 
-const PYTHON    = process.env.PYTHON || '/usr/bin/python3';
-const SOLVER_PY = path.join(__dirname, '..', 'hcaptcha_cnn_solver.py');
-const MAX_ROUNDS = 12;
+// ── Python CNN process (singleton) ───────────────────────────────────────────
+let _pyProc   = null;
+let _pyReady  = false;
+let _pendingResolvers = [];   // queue of {resolve, reject, timer}
 
-// ── CNN Python process ────────────────────────────────────────────────────────
-let _pyProc  = null;
-let _pyReady = false;
-let _pending = [];
+const PYTHON     = process.env.PYTHON || '/usr/bin/python3';
+const SOLVER_PY  = path.join(__dirname, '..', 'hcaptcha_cnn_solver.py');
+const MAX_ROUNDS = 12;  // max challenge rounds (includes reloads for unsolvable types)
 
 function getPyProc() {
   if (_pyProc && !_pyProc.killed) return _pyProc;
+
   console.log('      🔄 Starting hCaptcha CNN solver...');
-  _pyProc  = spawn(PYTHON, [SOLVER_PY], { stdio: ['pipe','pipe','pipe'] });
+  _pyProc  = spawn(PYTHON, [SOLVER_PY], { stdio: ['pipe', 'pipe', 'pipe'] });
   _pyReady = false;
-  let _buf = '';
+
+  let _lineBuf = '';
+
   _pyProc.stdout.on('data', chunk => {
-    _buf += chunk.toString();
-    const lines = _buf.split('\n');
-    _buf = lines.pop();
+    _lineBuf += chunk.toString();
+    const lines = _lineBuf.split('\n');
+    _lineBuf = lines.pop();                 // keep incomplete line
     for (const line of lines) {
       const trimmed = line.trim();
       if (!trimmed) continue;
-      const r = _pending.shift();
-      if (r) {
-        clearTimeout(r.timer);
-        try { r.resolve(JSON.parse(trimmed)); }
-        catch (e) { r.reject(new Error(`Bad JSON: ${trimmed.slice(0,80)}`)); }
+      const resolver = _pendingResolvers.shift();
+      if (resolver) {
+        clearTimeout(resolver.timer);
+        try {
+          resolver.resolve(JSON.parse(trimmed));
+        } catch (e) {
+          resolver.reject(new Error(`Bad JSON: ${trimmed.slice(0, 80)}`));
+        }
       }
     }
   });
+
   _pyProc.stderr.on('data', d => {
     const msg = d.toString().trim();
-    if (msg.includes('solver ready') || msg.includes('Prototypes ready')) _pyReady = true;
-    if (msg.includes('✅') || msg.includes('❌') || msg.includes('🎯') || msg.includes('Selected'))
-      console.log(`      [cnn] ${msg}`);
+    if (msg.includes('solver ready') || msg.includes('Prototypes ready')) {
+      _pyReady = true;
+    }
+    // Only print important lines to avoid noise
+    if (msg.includes('✅') || msg.includes('❌') || msg.includes('🎯') ||
+        msg.includes('Selected') || msg.includes('error')) {
+      console.log(`      [hcaptcha-cnn] ${msg}`);
+    }
   });
+
   _pyProc.on('exit', () => {
-    _pyProc = null; _pyReady = false;
-    for (const r of _pending) { clearTimeout(r.timer); r.reject(new Error('CNN exited')); }
-    _pending = [];
+    _pyProc  = null;
+    _pyReady = false;
+    // Reject all pending
+    for (const r of _pendingResolvers) {
+      clearTimeout(r.timer);
+      r.reject(new Error('CNN process exited'));
+    }
+    _pendingResolvers = [];
   });
+
   return _pyProc;
 }
 
-async function waitPyReady(ms = 90000) {
-  const end = Date.now() + ms;
-  while (Date.now() < end) { if (_pyReady) return true; await sleep(300); }
+async function waitPyReady(timeoutMs = 90000) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    if (_pyReady) return true;
+    await sleep(300);
+  }
   return false;
 }
 
-async function cnnClassify(label, imagesOrUrls) {
-  getPyProc();
+async function cnnClassify(taskLabel, imagesOrUrls) {
+  const proc = getPyProc();
   await waitPyReady();
+
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => {
-      const i = _pending.findIndex(r => r.resolve === resolve);
-      if (i !== -1) _pending.splice(i, 1);
-      reject(new Error('CNN timeout'));
+      const idx = _pendingResolvers.findIndex(r => r.resolve === resolve);
+      if (idx !== -1) _pendingResolvers.splice(idx, 1);
+      reject(new Error('CNN classify timeout'));
     }, 60000);
-    _pending.push({ resolve, reject, timer });
-    const isUrls = Array.isArray(imagesOrUrls) && typeof imagesOrUrls[0] === 'string' && imagesOrUrls[0].startsWith('http');
-    const payload = isUrls
-      ? JSON.stringify({ task: label, urls: imagesOrUrls })
-      : JSON.stringify({ task: label, images: imagesOrUrls });
-    _pyProc.stdin.write(payload + '\n');
+
+    _pendingResolvers.push({ resolve, reject, timer });
+
+    // Send URLs if available (Python fetches directly), else base64
+    const payload = Array.isArray(imagesOrUrls)
+      ? JSON.stringify({ task: taskLabel, images: imagesOrUrls }) + '\n'
+      : JSON.stringify({ task: taskLabel, urls: imagesOrUrls.data }) + '\n';
+    proc.stdin.write(payload);
   });
 }
 
@@ -83,36 +119,67 @@ async function sw(driver) {
 async function isHcaptchaSolved(driver) {
   try {
     await sw(driver);
+    // Check response token
+    const tokens = await driver.findElements(
+      By.css("textarea[name='h-captcha-response'],input[name='h-captcha-response']"));
+    for (const t of tokens) {
+      const val = (await t.getAttribute('value') || '').trim();
+      if (val && val.length > 10) return true;
+    }
+    // Also check via JS (some implementations hide the textarea)
     const jsCheck = await driver.executeScript(`
-      var sels = ['textarea[name="h-captcha-response"]','input[name="h-captcha-response"]','[name="h-captcha-response"]'];
+      var sels = [
+        'textarea[name="h-captcha-response"]',
+        'input[name="h-captcha-response"]',
+        '[name="h-captcha-response"]',
+      ];
       for (var i=0; i<sels.length; i++) {
         var el = document.querySelector(sels[i]);
         if (el && (el.value||'').length > 10) return true;
       }
       return false;
     `).catch(() => false);
-    return !!jsCheck;
-  } catch (_) { return false; }
+    if (jsCheck) return true;
+  } catch (_) {}
+  return false;
 }
 
+// Find the hCaptcha anchor iframe (checkbox)
 async function findAnchorIframe(driver) {
   await sw(driver);
-  // Scroll widget into view + inject script if needed
+
+  // Scroll widget into view
   await driver.executeScript(`
     var el = document.querySelector('h-captcha,.h-captcha,[data-hcaptcha-widget-id]');
     if (el) el.scrollIntoView({block:'center'});
-    if (!document.querySelector('iframe[src*="hcaptcha"]')) {
+  `).catch(() => {});
+  await sleep(1000);
+
+  // Inject hCaptcha script if not loaded (web component / lazy sites)
+  await driver.executeScript(`
+    (function(){
+      if (document.querySelector('iframe[src*="hcaptcha"]')) return;
+      var el = document.querySelector('h-captcha,.h-captcha,[data-hcaptcha-widget-id]');
+      if (!el) return;
       var s = document.createElement('script');
       s.src = 'https://js.hcaptcha.com/1/api.js';
       s.async = true; s.defer = true;
       document.head.appendChild(s);
-    }
+    })();
   `).catch(() => {});
-  // Wait up to 12s
+
+  // Wait up to 12s for hCaptcha iframe to appear
   for (let i = 0; i < 24; i++) {
     try {
+      // Try src*=hcaptcha (works after script injection)
       const frames = await driver.findElements(By.css('iframe[src*="hcaptcha"]'));
       for (const f of frames) {
+        if (await f.isDisplayed()) return f;
+      }
+      // Also try original XPath
+      const xframes = await driver.findElements(
+        By.xpath("//iframe[contains(@src,'hcaptcha') and contains(@src,'checkbox')]"));
+      for (const f of xframes) {
         if (await f.isDisplayed()) return f;
       }
     } catch (_) {}
@@ -121,26 +188,28 @@ async function findAnchorIframe(driver) {
   return null;
 }
 
+// Find the hCaptcha challenge iframe (image grid)
 async function findChallengeIframe(driver) {
   await sw(driver);
-  for (let i = 0; i < 20; i++) {
+  // Wait up to 8s for challenge iframe (has prompt-text inside)
+  for (let i = 0; i < 16; i++) {
     try {
       const frames = await driver.findElements(By.css('iframe[src*="hcaptcha"]'));
       for (const f of frames) {
+        if (!await f.isDisplayed()) continue;
         try {
-          const src = await f.getAttribute('src');
-          // Challenge iframe has #frame=challenge in src
-          if (src && src.includes('challenge') && await f.isDisplayed()) return f;
-        } catch (_) {}
+          await driver.switchTo().frame(f);
+          const hasPrompt = await driver.executeScript(
+            'return !!document.querySelector("h2.prompt-text,.prompt-text")');
+          await sw(driver);
+          if (hasPrompt) return f;
+        } catch (_) { await sw(driver); }
       }
-      // Fallback: any hcaptcha iframe that is not the checkbox
-      if (frames.length >= 2) {
-        for (const f of frames) {
-          try {
-            const src = await f.getAttribute('src');
-            if (src && !src.includes('checkbox') && await f.isDisplayed()) return f;
-          } catch (_) {}
-        }
+      // XPath fallback
+      const xframes = await driver.findElements(
+        By.xpath("//iframe[contains(@src,'hcaptcha') and contains(@src,'challenge')]"));
+      for (const f of xframes) {
+        if (await f.isDisplayed()) return f;
       }
     } catch (_) {}
     await sleep(500);
@@ -148,70 +217,55 @@ async function findChallengeIframe(driver) {
   return null;
 }
 
+// Click checkbox in anchor iframe
 async function clickCheckbox(driver) {
   const anchor = await findAnchorIframe(driver);
-  if (!anchor) { console.log('      ⚠️ hCaptcha anchor iframe not found'); return false; }
+  if (!anchor) { console.log('      ⚠️ hCaptcha checkbox iframe not found'); return false; }
   try {
     await driver.switchTo().frame(anchor);
-    await sleep(800);
+    await sleep(500);
 
-    // Method 1: Direct Selenium click
-    let clicked = false;
-    for (const sel of ['#anchor', '#checkbox', '[role="checkbox"]', '.checkbox', 'body']) {
-      try {
-        const el = await driver.findElement(By.css(sel));
-        await driver.executeScript('arguments[0].scrollIntoView({block:"center"});', el);
-        await sleep(300);
-        await el.click();
-        console.log('      🖱️ Selenium click on hCaptcha checkbox (' + sel + ')');
-        clicked = true;
-        break;
-      } catch (_) {}
-    }
+    // Get body element position for CDP click
+    const rect = await driver.executeScript(`
+      var el = document.querySelector('#anchor,#checkbox,[role="checkbox"]') || document.body;
+      var r = el.getBoundingClientRect();
+      return { x: r.left + r.width/2, y: r.top + r.height/2, found: el.id || el.tagName };
+    `);
 
-    // Method 2: CDP click
-    if (!clicked) {
-      try {
-        const rect = await driver.executeScript(
-          'var el=document.querySelector(\'#anchor,#checkbox,[role="checkbox"]\') || document.body;' +
-          'var r=el.getBoundingClientRect();return{x:r.left+r.width/2,y:r.top+r.height/2};'
-        );
-        const conn = await driver.createCDPConnection('page');
-        const x = rect.x + (Math.random() * 4 - 2);
-        const y = rect.y + (Math.random() * 4 - 2);
-        await conn.execute('Input.dispatchMouseEvent', { type: 'mouseMoved',    x, y, button: 'none' });
-        await sleep(80);
-        await conn.execute('Input.dispatchMouseEvent', { type: 'mousePressed',  x, y, button: 'left', clickCount: 1 });
-        await sleep(80);
-        await conn.execute('Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
-        console.log('      🖱️ CDP click on hCaptcha checkbox');
-        clicked = true;
-      } catch (_) {}
-    }
-
-    // Method 3: JS click
-    if (!clicked) {
-      await driver.executeScript(
-        'var el=document.querySelector(\'#anchor,#checkbox,[role="checkbox"]\') || document.body;' +
-        '["mouseover","mousedown","mouseup","click"].forEach(function(t){' +
-        'el.dispatchEvent(new MouseEvent(t,{bubbles:true,cancelable:true}));});'
-      );
-      console.log('      🖱️ JS click on hCaptcha checkbox');
+    // Use CDP Input.dispatchMouseEvent — sets isTrusted=true, bypasses bot detection
+    try {
+      const conn = await driver.createCDPConnection('page');
+      const x = rect.x + (Math.random() * 4 - 2);
+      const y = rect.y + (Math.random() * 4 - 2);
+      await conn.execute('Input.dispatchMouseEvent', { type: 'mouseMoved',   x, y, button: 'none' });
+      await sleep(80);
+      await conn.execute('Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 });
+      await sleep(80);
+      await conn.execute('Input.dispatchMouseEvent', { type: 'mouseReleased',x, y, button: 'left', clickCount: 1 });
+      console.log(`      🖱️ CDP click on hCaptcha checkbox (${rect.found})`);
+    } catch (_) {
+      // Fallback: regular JS click
+      await driver.executeScript(`
+        var el = document.querySelector('#anchor,#checkbox,[role="checkbox"]') || document.body;
+        el.dispatchEvent(new MouseEvent('click', {bubbles:true, cancelable:true, isTrusted:true}));
+      `);
+      console.log('      🖱️ JS click on hCaptcha checkbox (fallback)');
     }
 
     await sw(driver);
     return true;
   } catch (e) {
-    console.log('      ⚠️ Checkbox click: ' + (e.message||'').slice(0,60));
+    console.log(`      ⚠️ Checkbox click failed: ${(e.message || '').slice(0, 60)}`);
     await sw(driver);
     return false;
   }
 }
 
-
+// Read task label from challenge iframe
 async function getTaskLabel(driver, challengeFrame) {
   try {
     await driver.switchTo().frame(challengeFrame);
+    // Exact selector from hcaptcha-solver: h2.prompt-text > span
     const label = await driver.executeScript(`
       var span = document.querySelector('h2.prompt-text span');
       if (span) return span.innerText.trim().toLowerCase();
@@ -221,74 +275,78 @@ async function getTaskLabel(driver, challengeFrame) {
     `);
     await sw(driver);
     return (label || '').replace(/please click (on |each |all )?/i, '').trim();
-  } catch (_) { await sw(driver); return ''; }
+  } catch (_) {
+    await sw(driver);
+    return '';
+  }
 }
 
+// Fetch all tile images as base64 from challenge iframe
 async function getTileImages(driver, challengeFrame) {
   try {
     await driver.switchTo().frame(challengeFrame);
-    const result = await driver.executeScript(
-      'var styleEls = Array.from(document.querySelectorAll("[style]")).filter(function(e){' +
-      '  var s = e.getAttribute("style") || "";' +
-      '  return s.includes("hcaptcha.com") || (s.includes("url(") && s.includes("http"));' +
-      '});' +
-      'if (styleEls.length >= 3) {' +
-      '  var urls = styleEls.map(function(e){' +
-      '    var s = e.getAttribute("style") || "";' +
-      '    var m = s.match(/url\\(["\']?(https?:\\/\\/[^"\'\\)\\s]+)["\']?\\)/);' +
-      '    return m ? m[1] : null;' +
-      '  }).filter(Boolean);' +
-      '  if (urls.length >= 3) return { type: "urls", data: urls };' +
-      '}' +
-      'var bgEls = Array.from(document.querySelectorAll("*")).filter(function(e){' +
-      '  try { var s = window.getComputedStyle(e).backgroundImage;' +
-      '    return s && s !== "none" && s.includes("http"); } catch(_) { return false; }' +
-      '});' +
-      'if (bgEls.length >= 3) {' +
-      '  var bgUrls = bgEls.map(function(e){' +
-      '    var s = window.getComputedStyle(e).backgroundImage;' +
-      '    var m = s.match(/url\\(["\']?(https?:\\/\\/[^"\'\\)\\s]+)["\']?\\)/);' +
-      '    return m ? m[1] : null;' +
-      '  }).filter(Boolean);' +
-      '  if (bgUrls.length >= 3) return { type: "urls", data: bgUrls };' +
-      '}' +
-      'var imgs = Array.from(document.querySelectorAll("img")).filter(function(i){' +
-      '  return i.src && i.src.startsWith("http");' +
-      '});' +
-      'if (imgs.length >= 3) return { type: "urls", data: imgs.map(function(i){ return i.src; }) };' +
-      'var prompt = (document.querySelector(".prompt-text") ? document.querySelector(".prompt-text").innerText : "").toLowerCase();' +
-      'var isNonStandard = prompt.includes("drag") || prompt.includes("anomal") ||' +
-      '  prompt.includes("sequence") || prompt.includes("concealed") ||' +
-      '  prompt.includes("letter") || prompt.includes("arrow") ||' +
-      '  prompt.includes("rotate") || prompt.includes("order") ||' +
-      '  prompt.includes("circular") || prompt.includes("pair") ||' +
-      '  prompt.includes("matching") || prompt.includes("disrupt") ||' +
-      '  !document.querySelector(".task-grid");' +
-      'return { type: isNonStandard ? "non-standard" : "none", data: [], prompt: prompt };'
-    );
+    // Extract image URLs from background-image style
+    const result = await driver.executeScript(`
+      // Find ALL elements with hcaptcha image URLs in style
+      var allEls = Array.from(document.querySelectorAll('[style]'));
+      var imgEls = allEls.filter(function(e){
+        var s = e.getAttribute('style') || '';
+        return s.includes('hcaptcha.com') || s.includes('imgs') && s.includes('url(');
+      });
+
+      if (imgEls.length >= 3) {
+        var urls = imgEls.map(function(e){
+          var s = e.getAttribute('style') || '';
+          var m = s.match(/url\(["']?(https?:\/\/[^"')\s]+)["']?\)/);
+          return m ? m[1] : null;
+        }).filter(Boolean);
+        if (urls.length >= 3) return { type: 'urls', data: urls };
+      }
+
+      // img src fallback
+      var imgs = Array.from(document.querySelectorAll('img')).filter(function(i){
+        return i.offsetWidth >= 30 && i.src && i.src.startsWith('http');
+      });
+      if (imgs.length >= 3) return { type: 'urls', data: imgs.map(function(i){ return i.src; }) };
+      return { type: 'none', data: [] };
+    `);
     await sw(driver);
     return result || { type: 'none', data: [] };
-  } catch (_) { await sw(driver); return { type: 'none', data: [] }; }
+  } catch (_) {
+    await sw(driver);
+    return { type: 'none', data: [] };
+  }
 }
 
-
+// Get clickable tile elements (in same order as images)
 async function getTileElements(driver, challengeFrame) {
   try {
     await driver.switchTo().frame(challengeFrame);
+    // Exact selector from hcaptcha-solver: div.task-grid div.border-focus
     const els = await driver.executeScript(`
-      var els = Array.from(document.querySelectorAll('div.task-grid div.border-focus,.task-grid .border-focus'));
+      var els = Array.from(document.querySelectorAll(
+        'div.task-grid div.border-focus, .task-grid .border-focus'
+      ));
       if (els.length >= 3) return els;
-      els = Array.from(document.querySelectorAll('div.task-grid div.image,.task-grid .image'));
+      // Fallback: task-grid image divs
+      els = Array.from(document.querySelectorAll(
+        'div.task-grid div.image, .task-grid .image'
+      ));
       if (els.length >= 3) return els;
+      // Last resort: visible imgs
       return Array.from(document.querySelectorAll('img')).filter(function(i){
         return i.offsetWidth >= 30 && i.offsetParent !== null;
       });
     `);
     await sw(driver);
     return els || [];
-  } catch (_) { await sw(driver); return []; }
+  } catch (_) {
+    await sw(driver);
+    return [];
+  }
 }
 
+// Click a tile element with human-like mouse events
 async function clickTile(driver, challengeFrame, tileEl) {
   try {
     await driver.switchTo().frame(challengeFrame);
@@ -298,6 +356,8 @@ async function clickTile(driver, challengeFrame, tileEl) {
       var r = el.getBoundingClientRect();
       return { x: r.left + r.width/2, y: r.top + r.height/2 };
     `, tileEl);
+
+    // CDP click — isTrusted=true
     try {
       const conn = await driver.createCDPConnection('page');
       const x = rect.x + (Math.random() * 10 - 5);
@@ -317,12 +377,17 @@ async function clickTile(driver, challengeFrame, tileEl) {
     }
     await sw(driver);
     return true;
-  } catch (_) { await sw(driver); return false; }
+  } catch (_) {
+    await sw(driver);
+    return false;
+  }
 }
 
+// Click the Verify button inside challenge iframe
 async function clickVerify(driver, challengeFrame) {
   try {
     await driver.switchTo().frame(challengeFrame);
+    // Exact selector from hcaptcha-solver: div.submit.button
     const clicked = await driver.executeScript(`
       var btn = document.querySelector('div.submit.button,.submit.button');
       if (btn && btn.offsetParent !== null) { btn.click(); return true; }
@@ -338,161 +403,129 @@ async function clickVerify(driver, challengeFrame) {
     await sw(driver);
     if (clicked) console.log('      ✅ Clicked Verify');
     return clicked;
-  } catch (_) { await sw(driver); return false; }
+  } catch (_) {
+    await sw(driver);
+    return false;
+  }
+}
+async function waitForChallenge(driver, timeoutMs = 8000) {
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    const frame = await findChallengeIframe(driver);
+    if (frame) return frame;
+    await sleep(400);
+  }
+  return null;
 }
 
-// ── Main solver ───────────────────────────────────────────────────────────────
+// Check if challenge shows "new challenge" / refreshed
+async function isChallengeRefreshed(driver, challengeFrame, prevLabel) {
+  const newLabel = await getTaskLabel(driver, challengeFrame);
+  return newLabel && newLabel !== prevLabel;
+}
+
+// ── Main hCaptcha solver ──────────────────────────────────────────────────────
+// ── SeleniumBase solver process ───────────────────────────────────────────────
+let _sbProc  = null;
+let _sbReady = false;
+let _sbQueue = [];
+
+const SB_PY = require('path').join(__dirname, '..', 'hcaptcha_sb_solver.py');
+
+function getSbProc() {
+  if (_sbProc && !_sbProc.killed) return _sbProc;
+  console.log('      🔄 Starting SeleniumBase hCaptcha solver...');
+  _sbProc  = require('child_process').spawn(PYTHON, [SB_PY], { stdio: ['pipe','pipe','pipe'] });
+  _sbReady = false;
+  let _buf = '';
+  _sbProc.stdout.on('data', chunk => {
+    _buf += chunk.toString();
+    const lines = _buf.split("\n");
+    _buf = lines.pop();
+    for (const line of lines) {
+      const r = _sbQueue.shift();
+      if (r) { clearTimeout(r.timer); r.resolve(line.trim()); }
+    }
+  });
+  _sbProc.stderr.on('data', d => {
+    const msg = d.toString().trim();
+    if (msg.includes('ready')) _sbReady = true;
+    if (msg.includes('✅') || msg.includes('❌') || msg.includes('⚠️'))
+      console.log();
+  });
+  _sbProc.on('exit', () => {
+    _sbProc = null; _sbReady = false;
+    for (const r of _sbQueue) { clearTimeout(r.timer); r.resolve(''); }
+    _sbQueue = [];
+  });
+  return _sbProc;
+}
+
+async function waitSbReady(ms = 30000) {
+  const end = Date.now() + ms;
+  while (Date.now() < end) {
+    if (_sbReady) return true;
+    await sleep(300);
+  }
+  return _sbReady;
+}
+
+async function sbSolve(url) {
+  getSbProc();
+  await waitSbReady();
+  return new Promise(resolve => {
+    const timer = setTimeout(() => {
+      const i = _sbQueue.findIndex(r => r.resolve === resolve);
+      if (i !== -1) _sbQueue.splice(i, 1);
+      resolve('');
+    }, 120000);
+    _sbQueue.push({ resolve, timer });
+    _sbProc.stdin.write(url + '\n');
+  });
+}
+
+// ── Main hCaptcha solver ──────────────────────────────────────────────────────
 async function solveHcaptcha(driver) {
-  console.log('      🤖 Solving hCaptcha with CNN...');
+  console.log('      🤖 Solving hCaptcha with SeleniumBase CDP...');
 
-  // Click checkbox
-  const clicked = await clickCheckbox(driver);
-  if (!clicked) return false;
-  await sleep(2000);
+  // Get current URL to pass to SeleniumBase
+  const url = await driver.getCurrentUrl().catch(() => '');
+  if (!url) { console.log('      ⚠️ Could not get URL'); return false; }
 
-  // Check if already solved (easy captcha)
-  if (await isHcaptchaSolved(driver)) {
-    console.log('      ✅ hCaptcha solved at checkbox!');
-    return true;
-  }
+  // SeleniumBase opens its own browser, solves hCaptcha, returns token
+  const token = await sbSolve(url);
 
-  // Find challenge iframe
-  let challengeFrame = null;
-  for (let i = 0; i < 10; i++) {
-    challengeFrame = await findChallengeIframe(driver);
-    if (challengeFrame) break;
-    await sleep(500);
-  }
-  if (!challengeFrame) {
-    console.log('      ⚠️ No challenge iframe appeared');
+  if (!token || token.length < 10) {
+    console.log('      ❌ SeleniumBase did not return token');
     return false;
   }
 
-  // Force challenge iframe visible (hCaptcha hides it off-screen)
+  console.log(`      ✅ Got token (len=${token.length}) — injecting into page...`);
+
+  // Inject token into the page's hCaptcha response fields
   try {
     await driver.executeScript(`
-      var frames = Array.from(document.querySelectorAll('iframe[src*="hcaptcha"]'));
-      var cf = frames.find(f => f.src.includes('challenge'));
-      if (cf) {
-        cf.style.display = 'block';
-        cf.style.visibility = 'visible';
-        cf.style.position = 'fixed';
-        cf.style.top = '50px';
-        cf.style.left = '50px';
-        cf.style.zIndex = '999999';
-        cf.style.width = '500px';
-        cf.style.height = '600px';
-      }
-    `);
-    await sleep(1000);
-  } catch (_) {}
-
-  // Solve challenge rounds
-  for (let round = 1; round <= MAX_ROUNDS; round++) {
-    console.log(`      🔄 Challenge round ${round}/${MAX_ROUNDS}`);
-
-    const label = await getTaskLabel(driver, challengeFrame);
-    if (!label) { console.log('      ⚠️ No task label'); break; }
-    console.log(`      🎯 Task: "${label}"`);
-
-    const tileData = await getTileImages(driver, challengeFrame);
-    if (!tileData.data.length) {
-      // Non-standard challenge (drag, sequence, anomaly) — reload for a standard one
-      const reason = tileData.type === 'non-standard'
-        ? `non-standard: "${(tileData.prompt||'').substring(0,50)}"`
-        : 'no tiles';
-      console.log(`      🔄 ${reason} — reloading challenge`);
-      try {
-        await driver.switchTo().frame(challengeFrame);
-        const reloaded = await driver.executeScript(`
-          var btn = document.querySelector('.refresh.button,[aria-label*="new"],[title*="new"]');
-          if (btn) { btn.click(); return 'clicked'; }
-          // Try skip button
-          btn = document.querySelector('.skip,.skip-btn,[class*="skip"]');
-          if (btn && btn.offsetParent) { btn.click(); return 'skipped'; }
-          return null;
-        `);
-        await sw(driver);
-        if (!reloaded) {
-          // Re-click checkbox to get fresh challenge
-          await sw(driver);
-          await clickCheckbox(driver);
-        }
-      } catch (_) { await sw(driver); }
-      await sleep(2000);
-      // Find new challenge frame
-      const newFrame = await findChallengeIframe(driver);
-      if (newFrame) challengeFrame = newFrame;
-      continue;
-    }
-    console.log(`      🖼️ ${tileData.data.length} tiles`);
-
-    // CNN classify
-    let indices = [];
-    try {
-      const result = await cnnClassify(label, tileData.data);
-      indices = result.indices || [];
-    } catch (e) {
-      console.log(`      ⚠️ CNN error: ${e.message}`);
-      break;
-    }
-
-    if (!indices.length) {
-      console.log('      ⚠️ CNN returned no matches — reloading challenge');
-      // Click skip/reload if available
-      try {
-        await driver.switchTo().frame(challengeFrame);
-        await driver.executeScript(`
-          var btn = document.querySelector('.refresh.button,[aria-label*="new"]');
-          if (btn) btn.click();
-        `);
-        await sw(driver);
-      } catch (_) { await sw(driver); }
-      await sleep(2000);
-      continue;
-    }
-
-    console.log(`      ✅ Clicking tiles: [${indices.join(', ')}]`);
-
-    // Get tile elements and click matching ones
-    const tileEls = await getTileElements(driver, challengeFrame);
-    for (const idx of indices) {
-      if (idx < tileEls.length) {
-        await clickTile(driver, challengeFrame, tileEls[idx]);
-        await sleep(rand(300, 600));
-      }
-    }
-
-    await sleep(rand(800, 1200));
-
-    // Click Verify
-    await clickVerify(driver, challengeFrame);
-    await sleep(rand(2000, 3000));
-
-    // Check if solved
-    if (await isHcaptchaSolved(driver)) {
-      console.log('      ✅ hCaptcha solved!');
-      return true;
-    }
-
-    // Check if new challenge appeared
-    const newFrame = await findChallengeIframe(driver);
-    if (newFrame) {
-      challengeFrame = newFrame;
-      continue;
-    }
-
-    // No new challenge — might be solved
-    if (await isHcaptchaSolved(driver)) {
-      console.log('      ✅ hCaptcha solved!');
-      return true;
-    }
-    break;
+      var token = arguments[0];
+      var sels = ['textarea[name="h-captcha-response"]','input[name="h-captcha-response"]','[name="h-captcha-response"]'];
+      sels.forEach(function(sel){
+        document.querySelectorAll(sel).forEach(function(el){
+          el.value = token;
+          el.dispatchEvent(new Event('input',{bubbles:true}));
+          el.dispatchEvent(new Event('change',{bubbles:true}));
+        });
+      });
+    `, token);
+    console.log('      ✅ Token injected into page');
+    return true;
+  } catch (e) {
+    console.log('      ⚠️ Token injection error:', e.message.slice(0, 80));
+    return false;
   }
-
-  console.log('      ❌ hCaptcha not solved');
-  return false;
 }
 
-process.on('exit', () => { if (_pyProc) try { _pyProc.kill(); } catch (_) {} });
+// Cleanup on exit
+process.on('exit', () => {
+  if (_pyProc) try { _pyProc.kill(); } catch (_) {}
+});
+
 module.exports = { solveHcaptcha };
