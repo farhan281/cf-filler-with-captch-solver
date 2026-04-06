@@ -1323,3 +1323,4 @@ https://www.thinkcava.com/contact,Failed,Submitted but no confirmation detected,
 https://motiongiraffx.com/contact-us/,Failed,Turnstile widget not solved at pre-submit,Loaded,4.5,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not solved at pre-submit: Turnstile widget,,
 https://fieldofstudy.design/#contact,Failed,No form fields detected,Loaded,6.2,Opened,Found,0,,,,,,
 https://tucllcpromo.us,Failed,Submitted but no confirmation detected,Loaded,10.1,Opened,Found,5,"full_name,company,email,phone,message","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],No confirmation
+https://www.creativecircle.com/contact-us/,Failed,No contact form detected,Loaded,6.2,Opened,Not found,,,,,,,
