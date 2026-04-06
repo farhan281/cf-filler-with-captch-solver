@@ -1195,3 +1195,21 @@ https://rysengrowth.com/contact/,Success,Verified thank-you / redirect,Loaded,4.
 https://www.informaticscommerce.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,5.1,Opened,Found,5,"full_name,last_name,email,phone,message","first_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'I'm Done. Let's Send It' (score=110),No confirmation
 https://www.fabianlocal.com/contacto/,Failed,Submitted but no confirmation detected,Loaded,11.8,Opened,Found,5,"first_name,email,phone,subject,message","last_name,full_name,company,website,job_title,budget,address",,Not present,Clicked: 'Enviar' (score=120),No confirmation
 https://bigboxdumprental.com,Failed,No contact form detected,Loaded,2.2,Not found,Not found,,,,,,,
+https://goodguysseo.com,Failed,No contact form detected,Loaded,12.6,Opened,Not found,,,,,,,
+https://www.regexseo.com/contact/,Failed,Submitted but no confirmation detected,Loaded,7.9,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=75),No confirmation
+https://www.gomarketingeasy.com/contact,Failed,Submitted but no confirmation detected,Loaded,3.1,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://goodseedmarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.0,Opened,Found,6,"full_name,email,phone,company,website,message","first_name,last_name,job_title,subject,budget,address",,Not present,Clicked: 'Schedule My Call' (score=95),Success detected
+https://seomarketflow.com,Failed,No contact form detected,Loaded,1.0,Opened,Not found,,,,,,,
+https://houstonlawfirmseo.site/contact.html,Failed,Submitted but no confirmation detected,Loaded,4.0,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=105),No confirmation
+https://www.seointexas.com/contact-us/,Failed,,Loaded,5.1,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://www.uprightdigital.com/#,Failed,No contact form detected,Loaded,6.2,Opened,Not found,,,,,,,
+https://www.houstonwebdesignagency.com/contact,Success,Verified thank-you / redirect,Loaded,7.1,Opened,Found,6,"first_name,last_name,company,phone,email,message","full_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit My Message' (score=110),Success detected
+https://seorunners.com/contact/,Failed,No contact form detected,Loaded,6.6,Opened,Not found,,,,,,,
+https://designatwork.com/contact/,Success,Verified thank-you / redirect,Loaded,5.8,Opened,Found,8,"first_name,last_name,company,email,phone,website,select:I'm interested in...,message","full_name,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://ib-seo.com/contact-us/,Failed,,Loaded,3.1,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://just-now.in,Skipped,"unknown error: net::ERR_SSL_PROTOCOL_ERROR
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://www.thesocialcontentcompany.com/,Failed,No contact form detected,Loaded,3.1,Opened,Not found,,,,,,,
+https://clickfirstsmm.com/contact-us,Success,Verified thank-you / redirect,Loaded,7.6,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Click To Become The Next Big Brand!' (score=95),Success detected
+https://www.searchhousemedia.com/#contact,Success,Verified thank-you / redirect,Loaded,6.1,Opened,Found,4,"full_name,email,phone,website","first_name,last_name,company,job_title,subject,message,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=105),Success detected
+https://swiggardcreative.com,Failed,Submitted but no confirmation detected,Loaded,5.8,Opened,Found,5,"first_name,last_name,email,company,website","full_name,phone,job_title,subject,message,budget,address",,Not present,form.submit(): form[0],No confirmation
