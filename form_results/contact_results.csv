@@ -1310,3 +1310,4 @@ https://popcornbranding.in/contact-us/,Success,Verified thank-you / redirect,Loa
 https://peachydigitals.com/get-in-touch/,Success,Verified thank-you / redirect,Loaded,10.5,Opened,Found,5,"full_name,email,phone,select:Services,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=105),Success detected
 https://myindconsulting.com/demo-contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://woreman.com,Failed,No contact form detected,Loaded,14.2,Opened,Not found,,,,,,,
+https://www.carsongroupadvertising.com/contact/,Success,Verified thank-you / redirect,Loaded,6.9,Opened,Found,6,"email,first_name,last_name,phone,website,message","full_name,company,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'SUBMIT FORM' (score=120),Success detected
