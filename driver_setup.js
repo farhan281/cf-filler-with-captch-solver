@@ -69,6 +69,8 @@ function freshProfileDir() {
   return _profileDir;
 }
 
+const HCAPTCHA_EXT = path.join(__dirname, 'hcaptcha_models', 'ext');
+
 async function makeDriver() {
   const binary     = findBrowserBinary();
   const driverPath = findChromedriverBinary();
@@ -82,12 +84,20 @@ async function makeDriver() {
   }
   opts.addArguments(
     '--disable-notifications',
-    '--start-maximized',
     '--disable-blink-features=AutomationControlled',
     '--no-sandbox',
     '--disable-dev-shm-usage',
+    '--window-size=960,1080',
+    '--window-position=0,0',
     `--user-data-dir=${profileDir}`,
   );
+
+  // Load hektCaptcha extension for auto hCaptcha solving
+  if (fs.existsSync(HCAPTCHA_EXT)) {
+    opts.addArguments(`--load-extension=${HCAPTCHA_EXT}`);
+    console.log('   🧩 hektCaptcha extension loaded');
+  }
+
   if (headless) opts.addArguments('--headless=new', '--disable-gpu');
 
   // IP rotation — get proxy before building driver
