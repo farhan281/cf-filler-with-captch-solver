@@ -1059,3 +1059,4 @@ https://boulevard.io,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://growthchart.co.in/,Failed,No contact form detected,Loaded,1.9,Opened,Not found,,,,,,,
 https://growthguide.co.in/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.1,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send message' (score=120),No confirmation
+https://growthmarketingco.com/contact,Failed,No contact form detected,Loaded,3.4,Opened,Not found,,,,,,,
