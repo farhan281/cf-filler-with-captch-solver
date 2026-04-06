@@ -1166,3 +1166,4 @@ https://www.newstorymedia.com/,Failed,No form fields detected,Loaded,7.3,Opened,
 https://localseohouston.com/contacts.html,Failed,Submitted but no confirmation detected,Loaded,3.4,Opened,Found,2,"website,message","first_name,last_name,full_name,email,phone,company,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=120),No confirmation
 https://southwestdigital.io/more/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://designinhouston.com/contact/,Failed,No contact form detected,Loaded,5.2,Opened,Not found,,,,,,,
+https://oraclenova.com,Failed,No contact form detected,Loaded,1.6,Opened,Not found,,,,,,,
