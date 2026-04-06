@@ -1081,3 +1081,4 @@ https://www.qing.agency/inquire,Failed,No contact form detected,Loaded,1.7,Opene
 https://adsrole.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,9.6,Opened,Found,7,"last_name,email,company,phone,select:Which services are you interested in?
 *,select:Country
 *,message","first_name,full_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit Form' (score=105),No confirmation
+https://symphonyadvertising.com,Success,Verified thank-you / redirect,Loaded,14.2,Opened,Found,9,"full_name,company,select:What Best Describes Your Business?(Required),select:Years in Business(Required),select:Monthly Marketing Budget(Required),select:When Are You Looking to Start?(Required),phone,email,message","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],Success detected
