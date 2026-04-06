@@ -1115,3 +1115,5 @@ https://ventureandgrow.com,Failed,Submitted but no confirmation detected,Loaded,
 http://dolodigital.com/contact/,Success,Verified thank-you / redirect,Loaded,6.5,Opened,Found,6,"first_name,last_name,company,phone,email,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=105),Success detected
 https://learn.gobonafide.com/schedule-a-call,Failed,No contact form detected,Loaded,5.5,Opened,Not found,,,,,,,
 https://owdt.com/contact/,Success,Verified thank-you / redirect,Loaded,3.0,Opened,Found,5,"full_name,phone,email,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://www.theideafarm.net/contact,Failed,No contact form detected,Loaded,3.2,Opened,Not found,,,,,,,
+https://www.seoimpactpros.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.4,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
