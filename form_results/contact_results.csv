@@ -1103,3 +1103,5 @@ https://falcondigitalmarketing.com/contact/,Success,Verified thank-you / redirec
 https://improzinternetmarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,5.3,Opened,Found,7,"company,first_name,last_name,phone,email,website,message","full_name,job_title,subject,budget,address",,Auto-cleared at pre-submit: Turnstile widget,Clicked: 'Let's Discuss' (score=90),Success detected
 https://www.hitzdigitalmarketing.com/contact/,Failed,Turnstile widget not solved at pre-submit,Loaded,7.4,Opened,Found,5,"full_name,email,phone,website,message","first_name,last_name,company,job_title,subject,budget,address",,Not solved at pre-submit: Turnstile widget,,
 https://www.yousquaredmedia.com/contact-us,Success,Verified thank-you / redirect,Loaded,5.8,Opened,Found,5,"first_name,last_name,email,company,message","full_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'CONTACT US' (score=120),Success detected
+https://gofurtheronline.com,Skipped,"unknown error: net::ERR_SSL_PROTOCOL_ERROR
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
