@@ -1352,3 +1352,4 @@ https://www.growingsales.com/contact,Failed,Submitted but no confirmation detect
 https://growthmarketing417.com/contact,Failed,Submitted but no confirmation detected,Loaded,8.0,Opened,Found,4,"first_name,last_name,email,message","full_name,phone,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
 https://tally.so/,Failed,No contact form detected,Loaded,12.0,Opened,Not found,,,,,,,
 https://phoenixbpm.in/contact,Failed,,Loaded,1.8,Opened,Found,3,"first_name,email,message","last_name,full_name,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://accodelades.com/contact/,Success,Verified thank-you / redirect,Loaded,5.8,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
