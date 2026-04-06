@@ -1070,3 +1070,4 @@ https://www.venatorpm.com/contact-venator-performance-marketing,Success,Verified
 https://www.pneumallc.com/free-assessment,Failed,No form fields detected,Loaded,4.1,Opened,Found,0,,,,,,
 https://www.dancemotionmarketing.com/,Failed,No contact form detected,Loaded,5.3,Opened,Not found,,,,,,,
 https://www.marketingplug.co/contact-us,Failed,No contact form detected,Loaded,2.5,Opened,Not found,,,,,,,
+https://www.effectivemc.com/contact,Partial,Submitted but missing:  name,Loaded,5.2,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Subscribe' (score=75),Success detected
