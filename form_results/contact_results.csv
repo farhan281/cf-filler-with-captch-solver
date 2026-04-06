@@ -1348,3 +1348,4 @@ https://growthcomarketing.com,Failed,No contact form detected,Loaded,2.9,Opened,
 https://www.growthmarketingmn.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,7.9,Opened,Found,6,"full_name,phone,email,website,message,company","first_name,last_name,job_title,subject,budget,address",,Not present,Clicked: 'Start Growing Today!' (score=90),No confirmation
 https://co-cratestrategies.com,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://www.growingsales.com/contact,Failed,Submitted but no confirmation detected,Loaded,7.1,Opened,Found,6,"first_name,last_name,email,phone,select:select,message","full_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'GO!' (score=95),No confirmation
