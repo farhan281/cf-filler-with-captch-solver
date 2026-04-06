@@ -357,6 +357,25 @@ async function solveHcaptcha(driver) {
     return false;
   }
 
+  // Force challenge iframe visible (hCaptcha hides it off-screen)
+  try {
+    await driver.executeScript(`
+      var frames = Array.from(document.querySelectorAll('iframe[src*="hcaptcha"]'));
+      var cf = frames.find(f => f.src.includes('challenge'));
+      if (cf) {
+        cf.style.display = 'block';
+        cf.style.visibility = 'visible';
+        cf.style.position = 'fixed';
+        cf.style.top = '50px';
+        cf.style.left = '50px';
+        cf.style.zIndex = '999999';
+        cf.style.width = '500px';
+        cf.style.height = '600px';
+      }
+    `);
+    await sleep(1000);
+  } catch (_) {}
+
   // Solve challenge rounds
   for (let round = 1; round <= MAX_ROUNDS; round++) {
     console.log(`      🔄 Challenge round ${round}/${MAX_ROUNDS}`);
