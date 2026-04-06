@@ -1193,3 +1193,5 @@ https://ascendlymarketing.com/contact-us/,Failed,No contact form detected,Loaded
 https://johnnychenseo.com/,Failed,No contact form detected,Loaded,6.2,Not found,Not found,,,,,,,
 https://rysengrowth.com/contact/,Success,Verified thank-you / redirect,Loaded,4.7,Opened,Found,6,"full_name,email,phone,select:Services,website,message","first_name,last_name,company,job_title,subject,budget,address",,Not present,Clicked: 'GET A FREE QUOTE' (score=75),Success detected
 https://www.informaticscommerce.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,5.1,Opened,Found,5,"full_name,last_name,email,phone,message","first_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'I'm Done. Let's Send It' (score=110),No confirmation
+https://www.fabianlocal.com/contacto/,Failed,Submitted but no confirmation detected,Loaded,11.8,Opened,Found,5,"first_name,email,phone,subject,message","last_name,full_name,company,website,job_title,budget,address",,Not present,Clicked: 'Enviar' (score=120),No confirmation
+https://bigboxdumprental.com,Failed,No contact form detected,Loaded,2.2,Not found,Not found,,,,,,,
