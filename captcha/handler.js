@@ -5,6 +5,7 @@ const { detectCaptchaState, captchaSolved } = require('./detector');
 const { solveRecaptchaAudio }               = require('./recaptcha');
 const { waitForTurnstileAutoClear }         = require('./turnstile');
 const { solveImageCaptcha }                 = require('./image_captcha');
+const { solveHcaptcha }                     = require('./hcaptcha');
 const { CAPTCHA_POLICY, CAPTCHA_WAIT_TIMEOUT } = require('../config');
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
