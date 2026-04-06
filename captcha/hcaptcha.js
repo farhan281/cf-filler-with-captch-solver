@@ -343,7 +343,35 @@ async function solveHcaptcha(driver) {
     console.log(`      🎯 Task: "${label}"`);
 
     const tileData = await getTileImages(driver, challengeFrame);
-    if (!tileData.data.length) { console.log('      ⚠️ No tile images'); break; }
+    if (!tileData.data.length) {
+      // Non-standard challenge (drag, sequence, anomaly) — reload for a standard one
+      const reason = tileData.type === 'non-standard'
+        ? `non-standard: "${(tileData.prompt||'').substring(0,50)}"`
+        : 'no tiles';
+      console.log(`      🔄 ${reason} — reloading challenge`);
+      try {
+        await driver.switchTo().frame(challengeFrame);
+        const reloaded = await driver.executeScript(`
+          var btn = document.querySelector('.refresh.button,[aria-label*="new"],[title*="new"]');
+          if (btn) { btn.click(); return 'clicked'; }
+          // Try skip button
+          btn = document.querySelector('.skip,.skip-btn,[class*="skip"]');
+          if (btn && btn.offsetParent) { btn.click(); return 'skipped'; }
+          return null;
+        `);
+        await sw(driver);
+        if (!reloaded) {
+          // Re-click checkbox to get fresh challenge
+          await sw(driver);
+          await clickCheckbox(driver);
+        }
+      } catch (_) { await sw(driver); }
+      await sleep(2000);
+      // Find new challenge frame
+      const newFrame = await findChallengeIframe(driver);
+      if (newFrame) challengeFrame = newFrame;
+      continue;
+    }
     console.log(`      🖼️ ${tileData.data.length} tiles`);
 
     // CNN classify
