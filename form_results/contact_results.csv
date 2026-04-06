@@ -1272,3 +1272,5 @@ https://www.verticalweb.com/,Success,Verified thank-you / redirect,Loaded,18.0,O
 https://webnotix.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://vandellaljarrah.com,Failed,No contact form detected,Loaded,1.4,Opened,Not found,,,,,,,
 https://www.logoinhours.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.3,Opened,Found,3,"first_name,email,phone","last_name,full_name,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit Form' (score=120),No confirmation
+https://www.creativitydesigngroup.com/contact-houston-web-design/,Success,Success detected (submit not tracked),Loaded,8.7,Opened,Found,6,"full_name,company,phone,email,subject,message","first_name,last_name,website,job_title,budget,address",,Not present,No submit button found,Success detected
+https://texaswebstudios.com/contact,Success,Verified thank-you / redirect,Loaded,4.2,Opened,Found,6,"full_name,email,phone,subject,select:Select Services,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Send a Message' (score=95),Success detected
