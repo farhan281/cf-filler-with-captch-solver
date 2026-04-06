@@ -1,5 +1,6 @@
 """
-SeleniumBase CDP hCaptcha solver — CDP mouse events only (no PyAutoGUI).
+SeleniumBase CDP hCaptcha solver.
+Finds hCaptcha checkbox iframe and clicks it using CDP mouse events.
 Protocol: reads URL from stdin, writes token to stdout
 """
 import sys, os, time
@@ -15,95 +16,105 @@ def solve_hcaptcha(url: str) -> str:
     sb = None
     try:
         sb = sb_cdp.Chrome(url, lang="en")
-        sb.sleep(6)
+        sb.sleep(8)
 
-        # Wait for hCaptcha to load
-        for _ in range(10):
-            src = sb.get_page_source()
-            if 'hcaptcha' in src.lower():
-                break
-            sb.sleep(1)
-        sb.sleep(3)
-
-        # Get hCaptcha iframe/element position via CDP evaluate
+        # Find hCaptcha iframe position from page source
         pos = None
         try:
             pos = sb.loop.run_until_complete(sb.page.evaluate("""
                 () => {
-                    // Try checkbox iframe first
-                    var iframes = Array.from(document.querySelectorAll('iframe'));
-                    for (var f of iframes) {
-                        var s = f.src || '';
-                        if (s.includes('hcaptcha') && (s.includes('checkbox') || s.includes('anchor'))) {
-                            var r = f.getBoundingClientRect();
-                            if (r.width > 0) return {x: r.left + 24, y: r.top + 24};
+                    // Search all elements including shadow DOM
+                    function findHcaptcha(root) {
+                        var all = root.querySelectorAll('*');
+                        for (var el of all) {
+                            // Check iframe src
+                            if (el.tagName === 'IFRAME') {
+                                var src = el.src || el.getAttribute('src') || '';
+                                if (src.includes('hcaptcha') && src.includes('checkbox')) {
+                                    var r = el.getBoundingClientRect();
+                                    if (r.width > 0 && r.height > 0)
+                                        return {x: r.left + r.width/2, y: r.top + r.height/2, type: 'iframe'};
+                                }
+                            }
+                            // Check data attributes
+                            var attrs = el.getAttributeNames ? el.getAttributeNames() : [];
+                            for (var a of attrs) {
+                                var v = el.getAttribute(a) || '';
+                                if (v.includes('hcaptcha') || a.includes('hcaptcha')) {
+                                    var r = el.getBoundingClientRect();
+                                    if (r.width > 0 && r.height > 0)
+                                        return {x: r.left + r.width/2, y: r.top + r.height/2, type: 'element'};
+                                }
+                            }
+                            // Check shadow root
+                            if (el.shadowRoot) {
+                                var res = findHcaptcha(el.shadowRoot);
+                                if (res) return res;
+                            }
                         }
+                        return null;
                     }
-                    // Any hcaptcha iframe
-                    for (var f of iframes) {
-                        if ((f.src||'').includes('hcaptcha')) {
-                            var r = f.getBoundingClientRect();
-                            if (r.width > 0) return {x: r.left + 24, y: r.top + 24};
-                        }
-                    }
-                    // h-captcha element
-                    var el = document.querySelector('.h-captcha, h-captcha, [data-hcaptcha-widget-id]');
-                    if (el) {
-                        var r = el.getBoundingClientRect();
-                        return {x: r.left + 24, y: r.top + 24};
-                    }
-                    return null;
+                    return findHcaptcha(document);
                 }
             """))
         except Exception as e:
-            sys.stderr.write(f"⚠️ Position detect: {e}\n")
+            sys.stderr.write(f"⚠️ Find element: {e}\n")
             sys.stderr.flush()
 
         if not pos:
-            sys.stderr.write("❌ hCaptcha element not found\n")
+            # Fallback: search all iframes via CDP
+            try:
+                iframes = sb.loop.run_until_complete(sb.page.evaluate("""
+                    () => Array.from(document.querySelectorAll('iframe')).map(f => ({
+                        src: f.src || '',
+                        rect: f.getBoundingClientRect()
+                    }))
+                """))
+                sys.stderr.write(f"All iframes: {iframes}\n")
+                sys.stderr.flush()
+            except: pass
+            sys.stderr.write("❌ hCaptcha element not found on page\n")
             sys.stderr.flush()
             return ""
 
         x, y = pos['x'], pos['y']
-        sys.stderr.write(f"🖱️ CDP clicking hCaptcha at ({x:.0f}, {y:.0f})\n")
+        sys.stderr.write(f"🖱️ Clicking hCaptcha ({pos['type']}) at ({x:.0f}, {y:.0f})\n")
         sys.stderr.flush()
 
-        # CDP mouse move + click (isTrusted=true)
-        try:
-            sb.loop.run_until_complete(sb.page.mouse.move(x, y))
-            sb.sleep(0.3)
-            sb.loop.run_until_complete(sb.page.mouse.click(x, y))
-            sys.stderr.write("✅ CDP click done\n")
-            sys.stderr.flush()
-        except Exception as e:
-            sys.stderr.write(f"⚠️ CDP mouse: {e}\n")
-            sys.stderr.flush()
-            return ""
+        # CDP mouse click (isTrusted=true, bypasses bot detection)
+        sb.loop.run_until_complete(sb.page.mouse.move(x, y))
+        sb.sleep(0.5)
+        sb.loop.run_until_complete(sb.page.mouse.click(x, y))
+        sys.stderr.write("✅ CDP click dispatched\n")
+        sys.stderr.flush()
 
         # Wait for token up to 90s
-        sys.stderr.write("⏳ Waiting for token...\n")
+        sys.stderr.write("⏳ Waiting for hCaptcha token...\n")
         sys.stderr.flush()
         for i in range(45):
             sb.sleep(2)
             try:
-                token = sb.loop.run_until_complete(sb.page.evaluate(
-                    "document.querySelector(\"[name='h-captcha-response']\")?.value || ''"
-                ))
+                token = sb.loop.run_until_complete(sb.page.evaluate("""
+                    () => {
+                        var el = document.querySelector("[name='h-captcha-response']");
+                        return el ? el.value : '';
+                    }
+                """))
                 if token and len(token) > 10:
                     sys.stderr.write(f"✅ Token obtained (len={len(token)})\n")
                     sys.stderr.flush()
                     return token
             except: pass
 
-            # Re-click every 20s
+            # Re-click every 20s if no token yet
             if i > 0 and i % 10 == 0:
                 try:
                     sb.loop.run_until_complete(sb.page.mouse.click(x, y))
-                    sys.stderr.write("🔄 Re-clicked\n")
+                    sys.stderr.write("🔄 Re-clicked hCaptcha\n")
                     sys.stderr.flush()
                 except: pass
 
-        sys.stderr.write("❌ Token not obtained\n")
+        sys.stderr.write("❌ Token not obtained after 90s\n")
         sys.stderr.flush()
         return ""
 
