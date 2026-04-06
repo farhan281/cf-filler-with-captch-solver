@@ -1048,3 +1048,4 @@ http://in-queue.com/,Failed,Submitted but no confirmation detected,Loaded,2.0,Op
 https://labellebranding.com/,Failed,Submitted but no confirmation detected,Loaded,6.8,Opened,Found,5,"""first_name",last_name,email,subject,"message""","""full_name"
 https://chicagointernetmarketing.net/,Failed,,Loaded,16.0,Not found,Found,2,"full_name,email","first_name,last_name,phone,company,website,job_title,subject,message,budget,address",,Image OCR failed at pre-submit,,
 https://forms.gle/26LnbNVWbcj4QjQG9,Failed,No contact form detected,Loaded,2.4,Opened,Not found,,,,,,,
+https://comboapp.com/contacts,Failed,,Loaded,4.0,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
