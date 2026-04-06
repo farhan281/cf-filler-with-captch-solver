@@ -1250,3 +1250,10 @@ https://hendricks.ai/contact,Skipped,Submitted but no confirmation detected,Load
 https://www.shoutnhike.com/contact-us/,Failed,No contact form detected,Loaded,6.3,Opened,Not found,,,,,,,
 https://thisisfokus.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://refugemarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,3.1,Opened,Found,3,"first_name,last_name,email","full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'GET ON THE RADAR' (score=75),Success detected
+https://www.sunmediamarketing.com/contact-us/,Failed,,Loaded,5.0,Opened,Found,5,"full_name,email,phone,website,message","first_name,last_name,company,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://savagebrands.com/,Failed,,Loaded,7.9,Opened,Found,10,"first_name,last_name,company,job_title,email,address,select:Industry Tag,select:Position Tag (select one),select:Contact Type (select one),select:Lead Source (NA for client contacts)","full_name,phone,website,subject,message,budget",,Image OCR failed at pre-submit,,
+https://offers.hubspot.com/contact-sales?hubs_signup-url=www.hubspot.com%2F&hubs_signup-cta=nav-utility-contactsales&hubs_content=www.hubspot.com%2F&hubs_content-cta=nav-utility-contactsales&wfoid=fe34f1bd5f.1775461555,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.thecontent.haus/,Failed,No contact form detected,Loaded,11.1,Opened,Not found,,,,,,,
+https://cangodigital.net,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://unlockhealth.com,Failed,No contact form detected,Loaded,1.5,Opened,Not found,,,,,,,
