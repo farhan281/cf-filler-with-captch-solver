@@ -227,39 +227,50 @@ async function getTaskLabel(driver, challengeFrame) {
 async function getTileImages(driver, challengeFrame) {
   try {
     await driver.switchTo().frame(challengeFrame);
-    const result = await driver.executeScript(`
-      // Standard 3x3/4x4 grid — background-image tiles
-      var allEls = Array.from(document.querySelectorAll('[style]'));
-      var imgEls = allEls.filter(function(e){
-        var s = e.getAttribute('style') || '';
-        return s.includes('hcaptcha.com') || (s.includes('imgs') && s.includes('url('));
-      });
-      if (imgEls.length >= 3) {
-        var urls = imgEls.map(function(e){
-          var s = e.getAttribute('style') || '';
-          var m = s.match(/url\(["']?(https?:\/\/[^"')\\s]+)["']?\)/);
-          return m ? m[1] : null;
-        }).filter(Boolean);
-        if (urls.length >= 3) return { type: 'urls', data: urls };
-      }
-      // img src fallback
-      var imgs = Array.from(document.querySelectorAll('img')).filter(function(i){
-        return i.offsetWidth >= 30 && i.src && i.src.startsWith('http');
-      });
-      if (imgs.length >= 3) return { type: 'urls', data: imgs.map(function(i){ return i.src; }) };
-      // Check if this is a non-standard challenge (drag, sequence, anomaly etc.)
-      var prompt = (document.querySelector('.prompt-text')?.innerText || '').toLowerCase();
-      var isNonStandard = prompt.includes('drag') || prompt.includes('anomal') ||
-                          prompt.includes('sequence') || prompt.includes('concealed') ||
-                          prompt.includes('letter') || prompt.includes('arrow') ||
-                          prompt.includes('rotate') || prompt.includes('order') ||
-                          !document.querySelector('.task-grid');
-      return { type: isNonStandard ? 'non-standard' : 'none', data: [], prompt: prompt };
-    `);
+    const result = await driver.executeScript(
+      'var styleEls = Array.from(document.querySelectorAll("[style]")).filter(function(e){' +
+      '  var s = e.getAttribute("style") || "";' +
+      '  return s.includes("hcaptcha.com") || (s.includes("url(") && s.includes("http"));' +
+      '});' +
+      'if (styleEls.length >= 3) {' +
+      '  var urls = styleEls.map(function(e){' +
+      '    var s = e.getAttribute("style") || "";' +
+      '    var m = s.match(/url\\(["\']?(https?:\\/\\/[^"\'\\)\\s]+)["\']?\\)/);' +
+      '    return m ? m[1] : null;' +
+      '  }).filter(Boolean);' +
+      '  if (urls.length >= 3) return { type: "urls", data: urls };' +
+      '}' +
+      'var bgEls = Array.from(document.querySelectorAll("*")).filter(function(e){' +
+      '  try { var s = window.getComputedStyle(e).backgroundImage;' +
+      '    return s && s !== "none" && s.includes("http"); } catch(_) { return false; }' +
+      '});' +
+      'if (bgEls.length >= 3) {' +
+      '  var bgUrls = bgEls.map(function(e){' +
+      '    var s = window.getComputedStyle(e).backgroundImage;' +
+      '    var m = s.match(/url\\(["\']?(https?:\\/\\/[^"\'\\)\\s]+)["\']?\\)/);' +
+      '    return m ? m[1] : null;' +
+      '  }).filter(Boolean);' +
+      '  if (bgUrls.length >= 3) return { type: "urls", data: bgUrls };' +
+      '}' +
+      'var imgs = Array.from(document.querySelectorAll("img")).filter(function(i){' +
+      '  return i.src && i.src.startsWith("http");' +
+      '});' +
+      'if (imgs.length >= 3) return { type: "urls", data: imgs.map(function(i){ return i.src; }) };' +
+      'var prompt = (document.querySelector(".prompt-text") ? document.querySelector(".prompt-text").innerText : "").toLowerCase();' +
+      'var isNonStandard = prompt.includes("drag") || prompt.includes("anomal") ||' +
+      '  prompt.includes("sequence") || prompt.includes("concealed") ||' +
+      '  prompt.includes("letter") || prompt.includes("arrow") ||' +
+      '  prompt.includes("rotate") || prompt.includes("order") ||' +
+      '  prompt.includes("circular") || prompt.includes("pair") ||' +
+      '  prompt.includes("matching") || prompt.includes("disrupt") ||' +
+      '  !document.querySelector(".task-grid");' +
+      'return { type: isNonStandard ? "non-standard" : "none", data: [], prompt: prompt };'
+    );
     await sw(driver);
     return result || { type: 'none', data: [] };
   } catch (_) { await sw(driver); return { type: 'none', data: [] }; }
 }
+
 
 async function getTileElements(driver, challengeFrame) {
   try {
