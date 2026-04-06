@@ -42,6 +42,7 @@ async function handleCaptcha(driver, record, stage, formContext, timeout) {
     console.log(`   🤖 Auto-solving CAPTCHA at ${stage}: ${reason}`);
     const isCF        = ['turnstile','cloudflare','cf '].some(w => reason.toLowerCase().includes(w));
     const isRecaptcha = reason.toLowerCase().includes('recaptcha');
+    const isHcaptcha  = ['hcaptcha','h-captcha'].some(w => reason.toLowerCase().includes(w));
 
     if (isCF) {
       // First check if Turnstile is already solved (token present)
