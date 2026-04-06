@@ -1,0 +1,1 @@
+!function(){function t(){browser.permissions.request({origins:["<all_urls>","*://hekt-static.akmal.dev/*","*://*.hcaptcha.com/captcha/*","*://*.google.com/recaptcha/*","*://*.recaptcha.net/recaptcha/*"]})}document.getElementById("setup-button").addEventListener("click",t)}();
