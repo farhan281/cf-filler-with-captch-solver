@@ -153,40 +153,61 @@ async function clickCheckbox(driver) {
   if (!anchor) { console.log('      ⚠️ hCaptcha anchor iframe not found'); return false; }
   try {
     await driver.switchTo().frame(anchor);
-    await sleep(500);
-    const rect = await driver.executeScript(`
-      var el = document.querySelector('#anchor,#checkbox,[role="checkbox"]') || document.body;
-      var r = el.getBoundingClientRect();
-      return { x: r.left + r.width/2, y: r.top + r.height/2 };
-    `);
-    // CDP click — isTrusted=true
-    try {
-      const conn = await driver.createCDPConnection('page');
-      const x = rect.x + (Math.random() * 4 - 2);
-      const y = rect.y + (Math.random() * 4 - 2);
-      await conn.execute('Input.dispatchMouseEvent', { type: 'mouseMoved',    x, y, button: 'none' });
-      await sleep(80);
-      await conn.execute('Input.dispatchMouseEvent', { type: 'mousePressed',  x, y, button: 'left', clickCount: 1 });
-      await sleep(80);
-      await conn.execute('Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
-      console.log('      🖱️ CDP click on hCaptcha checkbox');
-    } catch (_) {
-      await driver.executeScript(`
-        var el = document.querySelector('#anchor,#checkbox,[role="checkbox"]') || document.body;
-        ['mouseover','mousedown','mouseup','click'].forEach(function(t){
-          el.dispatchEvent(new MouseEvent(t,{bubbles:true,cancelable:true}));
-        });
-      `);
+    await sleep(800);
+
+    // Method 1: Direct Selenium click
+    let clicked = false;
+    for (const sel of ['#anchor', '#checkbox', '[role="checkbox"]', '.checkbox', 'body']) {
+      try {
+        const el = await driver.findElement(By.css(sel));
+        await driver.executeScript('arguments[0].scrollIntoView({block:"center"});', el);
+        await sleep(300);
+        await el.click();
+        console.log('      🖱️ Selenium click on hCaptcha checkbox (' + sel + ')');
+        clicked = true;
+        break;
+      } catch (_) {}
+    }
+
+    // Method 2: CDP click
+    if (!clicked) {
+      try {
+        const rect = await driver.executeScript(
+          'var el=document.querySelector(\'#anchor,#checkbox,[role="checkbox"]\') || document.body;' +
+          'var r=el.getBoundingClientRect();return{x:r.left+r.width/2,y:r.top+r.height/2};'
+        );
+        const conn = await driver.createCDPConnection('page');
+        const x = rect.x + (Math.random() * 4 - 2);
+        const y = rect.y + (Math.random() * 4 - 2);
+        await conn.execute('Input.dispatchMouseEvent', { type: 'mouseMoved',    x, y, button: 'none' });
+        await sleep(80);
+        await conn.execute('Input.dispatchMouseEvent', { type: 'mousePressed',  x, y, button: 'left', clickCount: 1 });
+        await sleep(80);
+        await conn.execute('Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
+        console.log('      🖱️ CDP click on hCaptcha checkbox');
+        clicked = true;
+      } catch (_) {}
+    }
+
+    // Method 3: JS click
+    if (!clicked) {
+      await driver.executeScript(
+        'var el=document.querySelector(\'#anchor,#checkbox,[role="checkbox"]\') || document.body;' +
+        '["mouseover","mousedown","mouseup","click"].forEach(function(t){' +
+        'el.dispatchEvent(new MouseEvent(t,{bubbles:true,cancelable:true}));});'
+      );
       console.log('      🖱️ JS click on hCaptcha checkbox');
     }
+
     await sw(driver);
     return true;
   } catch (e) {
-    console.log(`      ⚠️ Checkbox click: ${(e.message||'').slice(0,60)}`);
+    console.log('      ⚠️ Checkbox click: ' + (e.message||'').slice(0,60));
     await sw(driver);
     return false;
   }
 }
+
 
 async function getTaskLabel(driver, challengeFrame) {
   try {
