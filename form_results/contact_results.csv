@@ -1794,3 +1794,4 @@ https://cheetahagency.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://albericistudio.com/contact/,Failed,No contact form detected,Loaded,9.8,Opened,Not found,,,,,,,
 https://topusasites.top,Failed,No contact form detected,Loaded,3.7,Opened,Not found,,,,,,,
 https://brizzmarketing.com,Failed,No contact form detected,Loaded,0.6,Not found,Not found,,,,,,,
+https://triangleaisystems.com/,Success,Verified thank-you / redirect,Loaded,3.1,Opened,Found,4,"full_name,email,phone,company","first_name,last_name,website,job_title,subject,message,budget,address",,Not present,form.submit(): form[0],Success detected
