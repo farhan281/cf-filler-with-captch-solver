@@ -1773,3 +1773,4 @@ https://maskar.com/contact-us/,Failed,No contact form detected,Loaded,3.9,Opened
 https://broad.agency/,Failed,No contact form detected,Loaded,2.8,Opened,Not found,,,,,,,
 https://saltedbranding.com/contact/,Failed,Submitted but no confirmation detected,Loaded,4.6,Opened,Found,2,"first_name,email","last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,"Clicked: 'YES, LET'S BE FRIENDS!' (score=75)",No confirmation
 https://clearbridgebranding.com/contact/,Failed,,Loaded,6.8,Opened,Found,6,"full_name,job_title,company,address,phone,email","first_name,last_name,website,subject,message,budget",,Image OCR failed at pre-submit,,
+https://logosbynick.com/contact/,Failed,No contact form detected,Loaded,4.5,Opened,Not found,,,,,,,
