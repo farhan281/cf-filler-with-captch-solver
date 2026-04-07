@@ -1749,3 +1749,5 @@ https://phillywebworks.com,Failed,Submitted but no confirmation detected,Loaded,
 https://mediaproper.com,Success,Verified thank-you / redirect,Loaded,9.1,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
 https://intuitsolutions.net,Failed,Submitted but no confirmation detected,Loaded,10.9,Opened,Found,6,"first_name,last_name,email,phone,website,message","full_name,company,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=100),No confirmation
 https://ecityinteractive.com,Failed,No contact form detected,Loaded,2.3,Opened,Not found,,,,,,,
+https://kryptdigital.co/contact/,Failed,Submitted but no confirmation detected,Loaded,6.8,Opened,Found,6,"first_name,last_name,email,phone,select:How can we help you?,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=105),No confirmation
+https://www.synergylabs.co/locations/philadelphia?source=maps#,Failed,No contact form detected,Loaded,5.3,Opened,Not found,,,,,,,
