@@ -2066,3 +2066,7 @@ https://www.cafesevilla.com/contact/,Success,Verified thank-you / redirect,Loade
 Which Location?
 San Diego
 Costa Mesa","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=105),Success detected
+https://baskdigital.com,Success,Verified thank-you / redirect,Loaded,8.5,Opened,Found,5,"full_name,phone,email,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=115),Success detected
+https://americancreativedesigners.com/contact-us,Failed,,Loaded,2.7,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://brand-north.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
