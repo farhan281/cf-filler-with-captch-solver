@@ -1756,3 +1756,4 @@ https://designwithartisan.com/#contactus,Success,Verified thank-you / redirect,L
 https://www.mile6.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://exploreexit.com,Success,Verified thank-you / redirect,Loaded,5.4,Opened,Found,5,"full_name,job_title,email,company,message","first_name,last_name,phone,website,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://cazmediadesign.com,Failed,No contact form detected,Loaded,3.0,Opened,Not found,,,,,,,
+https://www.altitudellc.net/,Failed,No contact form detected,Loaded,1.6,Opened,Not found,,,,,,,
