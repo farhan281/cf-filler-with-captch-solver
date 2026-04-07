@@ -1754,3 +1754,4 @@ https://www.synergylabs.co/locations/philadelphia?source=maps#,Failed,No contact
 https://www.lyquix.com/contact-us/,Success,Verified thank-you / redirect,Loaded,5.8,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://designwithartisan.com/#contactus,Success,Verified thank-you / redirect,Loaded,7.6,Opened,Found,8,"full_name,company,first_name,last_name,email,phone,select:Project Budget,message","website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
 https://www.mile6.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://exploreexit.com,Success,Verified thank-you / redirect,Loaded,5.4,Opened,Found,5,"full_name,job_title,email,company,message","first_name,last_name,phone,website,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
