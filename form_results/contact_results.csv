@@ -1677,3 +1677,29 @@ https://inbloomdigitalmarketing.com/contact,Success,Verified thank-you / redirec
 https://francescaragucci.com,Failed,Submitted but no confirmation detected,Loaded,4.8,Opened,Found,6,"first_name,last_name,email,message,website,budget","full_name,phone,company,job_title,subject,address",,Not present,form.submit(): form[0],No confirmation
 https://creativerepute.com,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,13.8,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
 https://phillyprgirl.com/contact-philly-pr-girl/,Success,Verified thank-you / redirect,Loaded,19.1,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Send' (score=120),Success detected
+https://enroutemarketing.com/contact/,Failed,Submitted but no confirmation detected,Loaded,4.2,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
+https://www.7ccommunications.com/,Failed,No contact form detected,Loaded,2.8,Opened,Not found,,,,,,,
+https://mavn.media/,Failed,No contact form detected,Loaded,2.5,Opened,Not found,,,,,,,
+https://www.socialgracesagency.com/,Failed,No contact form detected,Loaded,1.5,Opened,Not found,,,,,,,
+https://levlane.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.1,Opened,Found,5,"first_name,last_name,email,select:Reason For Inquiry*,message","full_name,phone,company,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit' (score=120),Success detected
+http://www.daspromos.com/,Failed,No contact form detected,Loaded,8.0,Opened,Not found,,,,,,,
+https://albatross.marketing/#rec549435558,Failed,No contact form detected,Loaded,4.1,Opened,Not found,,,,,,,
+https://rtop.com/contact,Success,Verified thank-you / redirect,Loaded,2.7,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
+https://punchmedia.biz/contact/,Failed,,Loaded,4.0,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://www.paragonstudios21.com/contact,Failed,No form fields detected,Loaded,4.3,Opened,Found,0,,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,message,budget,address",,,,
+https://www.briancom.com/contact/,Failed,No contact form detected,Loaded,13.3,Opened,Not found,,,,,,,
+https://www.skyad.com/#contactus,Failed,,Loaded,8.5,Opened,Found,4,"full_name,email,company,message","first_name,last_name,phone,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://onlinelocaledgemarketing.com/,Failed,No contact form detected,Loaded,2.6,Opened,Not found,,,,,,,
+https://cmimediagroup.com/contact/,Success,Verified thank-you / redirect,Loaded,7.8,Opened,Found,7,"first_name,last_name,job_title,phone,email,select:Are you a...(Required),message","full_name,company,website,subject,budget,address",,Not present,Clicked: 'Get to Know Us' (score=90),Success detected
+https://mainsocialmedia.com,Success,Verified thank-you / redirect,Loaded,6.4,Opened,Found,6,"full_name,phone,email,company,select:Service type,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=120),Success detected
+https://robindalemedia.com/contact/,Skipped,Page load timeout,Timeout,3.5,,,,,,,,,
+https://peoplelinx.com/request-info,Failed,No contact form detected,Loaded,9.8,Opened,Not found,,,,,,,
+http://www.domusinc.com/,Partial,Submitted but missing:  name,Loaded,6.2,Opened,Found,4,"company,email,phone,message","first_name,last_name,full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://mitchellmedia.live,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://greenguruhosting.com/greenguru/contact-us/,Failed,Submitted but no confirmation detected,Loaded,6.0,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),No confirmation
+https://flackable.com/,Failed,No contact form detected,Loaded,6.7,Opened,Not found,,,,,,,
+https://www.phillycontentconsultant.com/,Failed,No contact form detected,Loaded,9.8,Opened,Not found,,,,,,,
+https://grouplevinson.com,Success,Verified thank-you / redirect,Loaded,4.4,Opened,Found,6,"full_name,email,company,phone,subject,message","first_name,last_name,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://devoedigital.com,Failed,No contact form detected,Loaded,1.9,Opened,Not found,,,,,,,
+https://yplocalsync.com/contact,Success,Verified thank-you / redirect,Loaded,5.0,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=105),Success detected
