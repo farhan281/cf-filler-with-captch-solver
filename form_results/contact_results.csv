@@ -1952,3 +1952,7 @@ https://www.bleqk.media/contact-us,Skipped,reCAPTCHA v2 rate-limited at pre-subm
 https://www.socialagencygroup.com/contact,Success,Verified thank-you / redirect,Loaded,3.9,Opened,Found,5,"full_name,email,phone,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
 https://visionsocialmediamarketing.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://digitalsocialite.in,Failed,No form fields detected,Loaded,19.5,Opened,Found,0,,,,,,
+https://cerebrodigitalx.com,Failed,No contact form detected,Loaded,0.9,Not found,Not found,,,,,,,
+https://sites.google.com/view/evolution-media/inicio,Failed,No contact form detected,Loaded,4.8,Opened,Not found,,,,,,,
+https://fireafmarketing.com,Failed,No contact form detected,Loaded,1.8,Opened,Not found,,,,,,,
