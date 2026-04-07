@@ -1905,3 +1905,9 @@ https://www.gdc-co.com/contact/,Success,Verified thank-you / redirect,Loaded,6.9
 https://staunchdigitalmarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,3.0,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send' (score=105),Success detected
 https://digitaltechnolabs.com/#contactus,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://digitalpundit.in,Failed,No form fields detected,Loaded,7.7,Opened,Found,0,,,,,,
+https://designseo.in/contact-us/,Failed,Submitted but no confirmation detected,Loaded,4.0,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Send Message' (score=120),No confirmation
+https://soarbeam.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,7.2,Opened,Found,5,"full_name,email,subject,phone,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Send Comment' (score=110),No confirmation
+https://digitalinning.com/contact.html,Success,Verified thank-you / redirect,Loaded,4.8,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send Message' (score=120),Success detected
+https://thedigitalaura.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://temerariimedia.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://artistryads.in,Success,Verified thank-you / redirect,Loaded,6.3,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit' (score=120),Success detected
