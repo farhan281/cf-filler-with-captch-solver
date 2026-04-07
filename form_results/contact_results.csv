@@ -1547,3 +1547,4 @@ https://www.franklindigital.co/contact/,Success,Verified thank-you / redirect,Lo
 https://phillyseopro.com/contact/,Failed,Submitted but no confirmation detected,Loaded,12.0,Opened,Found,6,"full_name,email,website,phone,subject,message","first_name,last_name,company,job_title,budget,address",,Not present,Clicked: 'Send' (score=115),No confirmation
 https://rojaweb.com/contact/,Success,Verified thank-you / redirect,Loaded,5.6,Opened,Found,6,"full_name,company,phone,email,budget,message","first_name,last_name,website,job_title,subject,address",,Not present,Clicked: 'Submit' (score=115),Success detected
 https://www.bccinteractive.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://padulamedia.com,Failed,No contact form detected,Loaded,19.1,Not found,Not found,,,,,,,
