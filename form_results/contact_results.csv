@@ -2122,3 +2122,5 @@ https://sanjoseseowebsitedesign.com,Failed,No contact form detected,Loaded,2.8,O
 https://www.rootsdigitalagency.com/contact,Failed,Submitted but no confirmation detected,Loaded,6.5,Opened,Found,7,"first_name,last_name,email,phone,company,website,message","full_name,job_title,subject,budget,address",,Not present,Clicked: 'TALK TO A HUMAN' (score=85),No confirmation
 http://www.friscowebsoft.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,9.9,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send' (score=120),No confirmation
 https://sites.google.com/view/pro-seo-agency-usa/contact-us,Failed,No contact form detected,Loaded,4.7,Opened,Not found,,,,,,,
+https://websiteseotoday.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
