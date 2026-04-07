@@ -2039,3 +2039,4 @@ https://saibranding.com,Failed,No contact form detected,Loaded,4.7,Not found,Not
 https://www.ruffhaus.com/contact,Failed,No form fields detected,Loaded,17.0,Opened,Found,0,,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,message,budget,address",,,,
 https://inovatory.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://cubicorange.co/contact/,Failed,Submitted but no confirmation detected,Loaded,12.2,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=115),No confirmation
+https://www.vippedicab.com/contact,Failed,No contact form detected,Loaded,4.3,Opened,Not found,,,,,,,
