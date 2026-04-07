@@ -2023,3 +2023,4 @@ https://camppublicrelations.com/contact,Failed,No form fields detected,Loaded,5.
 https://vitroagency.com,Success,Verified thank-you / redirect,Loaded,7.6,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=115),Success detected
 https://www.parallelinteractive.com/contact/,Failed,,Loaded,9.2,Opened,Found,6,"email,first_name,last_name,company,address,message","full_name,phone,website,job_title,subject,budget",,Image OCR failed at pre-submit,,
 https://digitalhypemedia.com/free-audit/,Failed,No contact form detected,Loaded,13.1,Opened,Not found,,,,,,,
+https://www.obuinteractive.com/contact,Failed,Submitted but no confirmation detected,Loaded,3.1,Opened,Found,5,"full_name,company,phone,email,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
