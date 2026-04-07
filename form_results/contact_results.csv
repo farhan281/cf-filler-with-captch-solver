@@ -1568,3 +1568,4 @@ https://frshlabs.co/contact/,Failed,Submitted but no confirmation detected,Loade
 https://smalltalkmedia.com/contact-2/,Failed,No contact form detected,Loaded,11.9,Opened,Not found,,,,,,,
 https://www.adinfusion.com/#,Failed,No form fields detected,Loaded,3.8,Opened,Found,0,,,,,,
 https://philadelphia-web-design.com/contact/,Failed,Submitted but no confirmation detected,Loaded,12.9,Opened,Found,3,"full_name,phone,email","first_name,last_name,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Send to PWD' (score=110),No confirmation
+https://splatworld.tv/contact/,Failed,Submitted but no confirmation detected,Loaded,6.8,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
