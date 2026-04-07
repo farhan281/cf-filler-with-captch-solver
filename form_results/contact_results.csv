@@ -1592,3 +1592,4 @@ https://www.thatsaboutit.com,Failed,No contact form detected,Loaded,2.3,Opened,N
 https://elysiummg.com,Failed,Submit failed: No submit button,Loaded,18.5,Opened,Found,6,"first_name,last_name,email,company,phone,message","full_name,website,job_title,subject,budget,address",,Not present,No submit button found,No success detected
 https://twogmarketing.com/#!/contact,Failed,No contact form detected,Loaded,7.6,Opened,Not found,,,,,,,
 https://seolocale.com,Success,Verified thank-you / redirect,Loaded,3.4,Opened,Found,5,"first_name,phone,email,select:INTERESTED SERVICE*,message","last_name,full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=105),Success detected
+https://lawfirmmarketingcompany.com,Failed,No contact form detected,Loaded,2.1,Opened,Not found,,,,,,,
