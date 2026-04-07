@@ -1874,3 +1874,4 @@ https://ntouchdigital.com/,Failed,No contact form detected,Loaded,4.8,Opened,Not
 https://digitalmarketingbyte.com/contact,Failed,Submitted but no confirmation detected,Loaded,3.3,Opened,Found,6,"full_name,email,phone,company,select:service,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=105),No confirmation
 https://digitalseoagencies.com,Failed,,Loaded,2.4,Opened,Found,5,"full_name,email,phone,select:select-service,message","first_name,last_name,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
 http://homeherogrowth.com/contact-home-hero-growth-today/,Failed,No form fields detected,Loaded,13.3,Opened,Found,0,,,,,,
+https://chamoycreative.com,Failed,No contact form detected,Loaded,4.0,Opened,Not found,,,,,,,
