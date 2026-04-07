@@ -1432,3 +1432,4 @@ https://hbsoftweb.com/contact-us/,Failed,Submitted but no confirmation detected,
 https://nuancedmedia.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://brain-box.in,Failed,No contact form detected,Loaded,0.9,Opened,Not found,,,,,,,
 https://buildingfutures.marketing,Success,Verified thank-you / redirect,Loaded,4.6,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'SUBMIT FORM' (score=120),Success detected
+https://hammersmithsupport.com/contact/,Success,Verified thank-you / redirect,Loaded,5.5,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Get in touch' (score=120),Success detected
