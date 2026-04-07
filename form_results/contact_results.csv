@@ -2080,3 +2080,4 @@ https://brielee.ai,Failed,Submitted but no confirmation detected,Loaded,9.1,Open
 https://www.riotcolor.com/contact/,Failed,No contact form detected,Loaded,2.7,Opened,Not found,,,,,,,
 https://www.olivepublicrelations.com/contact/,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,5.7,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
 https://www.growteam.com/contact,Success,Verified thank-you / redirect,Loaded,9.4,Opened,Found,6,"first_name,last_name,email,phone,company,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://digitalbizagency.com,Failed,No contact form detected,Loaded,3.4,Not found,Not found,,,,,,,
