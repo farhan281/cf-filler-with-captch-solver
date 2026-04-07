@@ -2168,3 +2168,4 @@ https://sanjosewebdesigns.com/contact/,Success,Verified thank-you / redirect,Loa
 https://www.spinnest.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,3.9,Opened,Found,7,"first_name,last_name,email,company,phone,select:select,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),No confirmation
 https://marketinginventors.com/contact-us-6127,Failed,No contact form detected,Loaded,1.5,Opened,Not found,,,,,,,
 https://bigvalley.co/contact/,Success,Verified thank-you / redirect,Loaded,9.0,Opened,Found,4,"first_name,last_name,email,message","full_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://sanjoselogodesign.com,Failed,No contact form detected,Loaded,1.4,Opened,Not found,,,,,,,
