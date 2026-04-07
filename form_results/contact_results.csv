@@ -1672,3 +1672,4 @@ https://www.helmcreativestudio.com/,Failed,No contact form detected,Loaded,4.6,O
 https://payperlead.com,Failed,No contact form detected,Loaded,4.4,Opened,Not found,,,,,,,
 https://www.coheremade.com/contact,Failed,,Loaded,1.4,Opened,Found,7,"full_name,company,website,email,phone,address,message","first_name,last_name,job_title,subject,budget",,Image OCR failed at pre-submit,,
 https://xhilarate.com/contact-us/,Failed,,Loaded,5.7,Opened,Found,1,message,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://www.brownsteingroup.com/contact/,Failed,Submitted but no confirmation detected,Loaded,4.9,Opened,Found,6,"select:Product Interest *,first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'GET IN TOUCH' (score=115),No confirmation
