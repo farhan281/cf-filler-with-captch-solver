@@ -2110,3 +2110,4 @@ https://www.digitalmarketingagency-consultant.com/get-in-touch/,Skipped,reCAPTCH
 https://orangory.com/contact,Failed,Submitted but no confirmation detected,Loaded,2.6,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: Image CAPTCHA,Clicked: 'Submit' (score=120),No confirmation
 https://resultfirst.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://devzev.com,Failed,No contact form detected,Loaded,4.8,Opened,Not found,,,,,,,
+https://viewranking.com/contact-us/,Success,Verified thank-you / redirect,Loaded,6.7,Opened,Found,6,"full_name,email,subject,phone,company,message","first_name,last_name,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
