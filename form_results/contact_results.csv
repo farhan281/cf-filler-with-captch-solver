@@ -1859,3 +1859,4 @@ https://robotcreative.com/contact/,Success,Verified thank-you / redirect,Loaded,
 https://beastcreativeagency.com/contact/,Success,Verified thank-you / redirect,Loaded,5.6,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=120),Success detected
 https://sitemaxmedia.com/contact-us/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://love.marketing/contact,Failed,Submitted but no confirmation detected,Loaded,5.5,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://sanatdigitalworld.com,Failed,Submitted but no confirmation detected,Loaded,12.5,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Leave a comment' (score=90),No confirmation
