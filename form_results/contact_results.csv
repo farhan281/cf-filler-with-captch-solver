@@ -1606,3 +1606,4 @@ https://businessrebooted.com,Failed,No contact form detected,Loaded,2.7,Opened,N
 https://creatingmatter.com,Failed,No contact form detected,Loaded,1.9,Opened,Not found,,,,,,,
 https://chetansureja.com,Failed,No contact form detected,Loaded,11.7,Opened,Not found,,,,,,,
 https://broadstreetdigital.com,Success,Verified thank-you / redirect,Loaded,5.2,Opened,Found,6,"full_name,phone,email,company,select:Budget,message","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send Message' (score=105),Success detected
+https://garan-agency.com,Failed,Submitted but no confirmation detected,Loaded,4.4,Opened,Found,5,"full_name,phone,email,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
