@@ -1902,3 +1902,5 @@ https://amaezingmarketinggroup.com/#contact,Partial,Submitted but missing: email
 https://www.tejanasinmedia.com/contact/,Failed,,Loaded,1.8,Opened,Found,7,"full_name,email,phone,company,select:SESSION TYPE *,select:MONTHLY BUDGET *,message","first_name,last_name,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
 https://gandhimediasolutions.com/contact.php,Failed,No contact form detected,Loaded,7.3,Opened,Not found,,,,,,,
 https://www.gdc-co.com/contact/,Success,Verified thank-you / redirect,Loaded,6.9,Opened,Found,4,"full_name,email,company,message","first_name,last_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://staunchdigitalmarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,3.0,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send' (score=105),Success detected
+https://digitaltechnolabs.com/#contactus,Skipped,Page load timeout,Timeout,,,,,,,,,,
