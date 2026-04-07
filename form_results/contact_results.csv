@@ -2201,3 +2201,5 @@ https://www.6sdigital.com,Failed,No contact form detected,Loaded,1.8,Opened,Not 
 https://www.jordandigitalmarketing.com/contact-us,Skipped,Submitted but no confirmation detected,Loaded,6.2,Opened,Found,4,"first_name,email,company,message","last_name,full_name,phone,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=100),No confirmation
 https://www.charlyagency.com/#,Failed,,Loaded,9.8,Opened,Found,2,"email,message","first_name,last_name,full_name,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
 https://www.veewz.com/old-home,Failed,No contact form detected,Loaded,5.5,Opened,Not found,,,,,,,
+https://cyrusson.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://rydigital.us/contact/,Failed,Submitted but no confirmation detected,Loaded,5.9,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Subscribe' (score=75),No confirmation
