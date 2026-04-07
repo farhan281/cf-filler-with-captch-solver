@@ -1579,3 +1579,5 @@ https://bookmenow.info,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://resultsguaranteedmarketing.com/contact-us/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://phillymetroseo.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://brain.do/contact/,Failed,Submitted but no confirmation detected,Loaded,7.1,Opened,Found,5,"full_name,company,email,phone,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://www.dinkuminteractive.com/contact/,Success,Verified thank-you / redirect,Loaded,6.0,Opened,Found,6,"first_name,last_name,email,website,select:I’m most interested in...,message","full_name,phone,company,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=115),Success detected
