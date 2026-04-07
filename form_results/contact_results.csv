@@ -1436,3 +1436,5 @@ https://hammersmithsupport.com/contact/,Success,Verified thank-you / redirect,Lo
 https://identixdesign.com,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://paulhowelldesign.com/contact-us/,Partial,Submitted but missing:  name,Loaded,14.5,Opened,Found,4,"last_name,email,phone,message","first_name,full_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: Image CAPTCHA,Clicked: 'Send Request' (score=120),Success detected
+https://pixelwebdesigns.in/ContactUs.aspx,Success,Verified thank-you / redirect,Loaded,8.3,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Auto-solved at post-submit: Image CAPTCHA,form.submit(): form[0],Success detected
+https://agital.com/contact/,Skipped,Submitted but no confirmation detected,Loaded,1.7,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Send' (score=105),No confirmation
