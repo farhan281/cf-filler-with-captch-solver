@@ -2192,3 +2192,4 @@ https://artofgalaxy.com/contact-us,Success,Verified thank-you / redirect,Loaded,
 https://vixmediagroup.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://clearspaceinteractiveservices.com,Failed,No contact form detected,Loaded,1.1,Opened,Not found,,,,,,,
 https://logoprofessors.com,Failed,No contact form detected,Loaded,8.4,Opened,Not found,,,,,,,
+https://victorious.com/contact/,Success,Verified thank-you / redirect,Loaded,14.3,Opened,Found,4,"first_name,last_name,email,phone","full_name,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Next' (score=65),Success detected
