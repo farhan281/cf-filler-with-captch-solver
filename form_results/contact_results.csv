@@ -2003,3 +2003,4 @@ https://blvr.com/contact/,Success,Verified thank-you / redirect,Loaded,7.0,Opene
 SUBMIT
 SUBMIT
 SUBMIT' (score=105)",Success detected
+https://redideostudio.com/contact/,Failed,Submitted but no confirmation detected,Loaded,8.7,Opened,Found,5,"full_name,email,phone,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=115),No confirmation
