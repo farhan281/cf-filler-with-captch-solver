@@ -1869,3 +1869,4 @@ https://advekta.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://authoritysolutions.com,Failed,No contact form detected,Loaded,0.7,Opened,Not found,,,,,,,
 https://klip.media,Failed,No contact form detected,Loaded,15.6,Opened,Not found,,,,,,,
 https://thewoodagency.com/contact,Success,Verified thank-you / redirect,Loaded,6.1,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Learn more' (score=35),Success detected
+https://www.nubeinternet.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.1,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=120),No confirmation
