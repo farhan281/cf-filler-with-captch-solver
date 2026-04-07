@@ -1817,3 +1817,4 @@ https://www.graydigitalgroup.com/contact/,Skipped,Submitted but no confirmation 
 https://jceseo.com,Failed,No contact form detected,Loaded,2.2,Opened,Not found,,,,,,,
 https://www.digitalwheelhouse.com/contact-us/,Success,Verified thank-you / redirect,Loaded,4.4,Opened,Found,5,"full_name,last_name,email,phone,message","first_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Your Message' (score=105),Success detected
 https://indylogix.com,Failed,Submitted but no confirmation detected,Loaded,4.4,Opened,Found,5,"full_name,email,phone,website,message","first_name,last_name,company,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://digitalbigbull.in/contact.php,Failed,,Loaded,4.2,Opened,Found,6,"company,first_name,last_name,email,phone,message","full_name,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
