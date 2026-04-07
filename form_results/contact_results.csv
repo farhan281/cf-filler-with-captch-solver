@@ -1590,3 +1590,4 @@ https://leadspruce.com,Failed,Submitted but no confirmation detected,Loaded,5.7,
 https://www.messageagency.org/contact-us,Failed,Submitted but no confirmation detected,Loaded,2.2,Opened,Found,5,"first_name,company,email,subject,message","last_name,full_name,phone,website,job_title,budget,address",,Not present,Submit event: submit-event,No confirmation
 https://www.thatsaboutit.com,Failed,No contact form detected,Loaded,2.3,Opened,Not found,,,,,,,
 https://elysiummg.com,Failed,Submit failed: No submit button,Loaded,18.5,Opened,Found,6,"first_name,last_name,email,company,phone,message","full_name,website,job_title,subject,budget,address",,Not present,No submit button found,No success detected
+https://twogmarketing.com/#!/contact,Failed,No contact form detected,Loaded,7.6,Opened,Not found,,,,,,,
