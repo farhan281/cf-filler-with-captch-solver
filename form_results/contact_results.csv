@@ -1709,3 +1709,4 @@ https://digitalforceagency.com/,Failed,No contact form detected,Loaded,3.5,Opene
 https://www.easternstandard.com/contact-us/,Success,Verified thank-you / redirect,Loaded,14.2,Opened,Found,4,"first_name,email,website,message","last_name,full_name,phone,company,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=115),Success detected
 https://finchbrands.com/contact-us/,Success,Verified thank-you / redirect,Loaded,7.6,Opened,Found,6,"first_name,last_name,email,phone,company,message","full_name,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=105),Success detected
 https://swellstart.com/contact/,Failed,No contact form detected,Loaded,5.3,Opened,Not found,,,,,,,
+https://davidroconnell.com,Failed,No contact form detected,Loaded,10.1,Opened,Not found,,,,,,,
