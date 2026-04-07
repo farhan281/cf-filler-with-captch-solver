@@ -1518,3 +1518,7 @@ https://mintomedia.in,Failed,No contact form detected,Loaded,1.0,Opened,Not foun
 https://adeves.com/contact/,Failed,No contact form detected,Loaded,2.8,Opened,Not found,,,,,,,
 https://eembranding.com/contact-us,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://thepenciladvertising.com/pages/contact-us,Failed,hCaptcha response not solved at pre-submit,Loaded,14.4,Opened,Found,8,"full_name,email,company,phone,address,website,message,select:How did you hear about us?","first_name,last_name,job_title,subject,budget",,Not solved at pre-submit: hCaptcha response,,
+https://digitalfriend.in/contact-us/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://augen.in/contact.php,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://brandcoremedia.com/contact-us/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://brandingbirds.com/contact/,Success,Verified thank-you / redirect,Loaded,13.4,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit Form' (score=120),Success detected
