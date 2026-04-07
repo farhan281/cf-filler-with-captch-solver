@@ -2115,3 +2115,4 @@ https://www.seowebplanet.com/contact-us/,Failed,No form fields detected,Loaded,5
 https://www.autusdigital.com/contact-us/,Partial,Submitted but missing:  name,Loaded,13.1,Opened,Found,6,"last_name,phone,email,website,select:menu-964,message","first_name,full_name,company,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Get Started' (score=120),Success detected
 https://www.cleardigital.com/about/contact-us,Failed,No form fields detected,Loaded,5.6,Opened,Found,0,,,,,,
 https://www.baytechdigital.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.2,Opened,Found,7,"full_name,email,phone,website,select:menu-296,select:budget,message","first_name,last_name,company,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=120),No confirmation
+https://blackswanmedia.co/contact-us/,Failed,No contact form detected,Loaded,14.4,Opened,Not found,,,,,,,
