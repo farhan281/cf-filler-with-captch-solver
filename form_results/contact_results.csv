@@ -1960,3 +1960,5 @@ https://cmo.raisingkanemedia.com/,Failed,No contact form detected,Loaded,11.8,Op
 https://jddigital.marketing/contact/,Failed,No contact form detected,Loaded,6.4,Opened,Not found,,,,,,,
 https://citywideseo.com/,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,9.4,Not found,Found,5,"first_name,email,phone,select:How Can We Help?,message","last_name,full_name,company,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
 https://transcendentalagency.com,Failed,No contact form detected,Loaded,1.0,Opened,Not found,,,,,,,
+https://cloudninedigitalmarketing.com,Failed,No contact form detected,Loaded,2.2,Opened,Not found,,,,,,,
+https://multigenonlinemarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,6.4,Opened,Found,2,"first_name,email","last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'SUBSCRIBE' (score=90),Success detected
