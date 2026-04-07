@@ -1493,3 +1493,10 @@ OOH Campaigns
 Website UI/UX
 Packaging Design
 Event Creative Curation","first_name,last_name,email,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
+https://digipple.com,Success,Verified thank-you / redirect,Loaded,13.9,Opened,Found,7,"full_name,company,email,phone,subject,select:Multiple Choice *
+
+Digital Branding
+Creative Designs
+Digital Advertising
+Website Development,message","first_name,last_name,website,job_title,budget,address",,Not present,Clicked: 'Get a Quote' (score=70),Success detected
+https://www.wth-hype.com/contact,Failed,No contact form detected,Loaded,3.4,Opened,Not found,,,,,,,
