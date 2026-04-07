@@ -2059,3 +2059,4 @@ https://theshipyard.com/contact/,Success,Verified thank-you / redirect,Loaded,10
 https://www.thefairwaycollective.com/,Failed,No contact form detected,Loaded,7.8,Opened,Not found,,,,,,,
 https://www.accenture.com/us-en/about/contact-us,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,4.8,Opened,Found,7,"first_name,last_name,email,phone,company,job_title,message","full_name,website,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
 https://pallasenterprise.com/contact/,Failed,No contact form detected,Loaded,2.3,Opened,Not found,,,,,,,
+https://wrightoncomm.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,4.8,Opened,Found,5,"full_name,email,phone,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Send Message' (score=120),No confirmation
