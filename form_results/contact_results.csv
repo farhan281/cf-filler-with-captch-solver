@@ -1734,3 +1734,4 @@ https://www.webwizarddev.com/contact,Success,Verified thank-you / redirect,Loade
 https://pixelparlor.com/contact/,Failed,Submitted but no confirmation detected,Loaded,15.3,Opened,Found,5,"first_name,last_name,company,email,select:I want to","full_name,phone,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=115),No confirmation
 https://www.tryvitris.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://thinkitfirst.com/contact-us/,Failed,No contact form detected,Loaded,12.6,Opened,Not found,,,,,,,
+https://www.brandllama.com/contact/,Success,Verified thank-you / redirect,Loaded,8.2,Opened,Found,5,"first_name,last_name,email,company,phone","full_name,website,job_title,subject,message,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],Success detected
