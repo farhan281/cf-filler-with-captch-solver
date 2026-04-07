@@ -1666,3 +1666,8 @@ https://skaibluemedia.com/engage-with-us,Failed,No contact form detected,Loaded,
 https://justblessedmarketing.com,Failed,No contact form detected,Loaded,2.1,Opened,Not found,,,,,,,
 https://neffknows.com/contact/,Success,Verified thank-you / redirect,Loaded,3.1,Opened,Found,3,"first_name,last_name,email","full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'JOIN' (score=90),Success detected
 https://wedefy.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://agency-m.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,4.6,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: Image CAPTCHA,form.submit(): form[0],No confirmation
+https://bemarketing.com/contact/,Success,Verified thank-you / redirect,Loaded,7.8,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Let's Talk' (score=120),Success detected
+https://www.helmcreativestudio.com/,Failed,No contact form detected,Loaded,4.6,Opened,Not found,,,,,,,
+https://payperlead.com,Failed,No contact form detected,Loaded,4.4,Opened,Not found,,,,,,,
+https://www.coheremade.com/contact,Failed,,Loaded,1.4,Opened,Found,7,"full_name,company,website,email,phone,address,message","first_name,last_name,job_title,subject,budget",,Image OCR failed at pre-submit,,
