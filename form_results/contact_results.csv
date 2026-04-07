@@ -1570,3 +1570,12 @@ https://www.adinfusion.com/#,Failed,No form fields detected,Loaded,3.8,Opened,Fo
 https://philadelphia-web-design.com/contact/,Failed,Submitted but no confirmation detected,Loaded,12.9,Opened,Found,3,"full_name,phone,email","first_name,last_name,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Send to PWD' (score=110),No confirmation
 https://splatworld.tv/contact/,Failed,Submitted but no confirmation detected,Loaded,6.8,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
 https://moonrooster.com/take-assessment/,Failed,No form fields detected,Loaded,4.9,Opened,Found,0,,,,,,
+https://expertseogroup.net,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://magnetmktg.com,Success,Verified thank-you / redirect,Loaded,5.7,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'SUBMIT' (score=105),Success detected
+https://www.vicimediainc.com/contact-us,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://215marketing.com/contact-us/,Failed,Submit failed: No submit button,Loaded,6.6,Opened,Found,6,"first_name,last_name,email,phone,select:Inquiry Type*,message","full_name,company,website,job_title,subject,budget,address",,Not present,No submit button found,No success detected
+https://www.dmipartners.com/,Skipped,Submitted but no confirmation detected,Loaded,7.9,Opened,Found,5,"last_name,select:I am a*,subject,email,phone","first_name,full_name,company,website,job_title,message,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'SEND IT!' (score=110),No confirmation
+https://bookmenow.info,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://resultsguaranteedmarketing.com/contact-us/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://phillymetroseo.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
