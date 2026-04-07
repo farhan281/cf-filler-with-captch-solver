@@ -2133,3 +2133,7 @@ https://smarketors.com,Failed,No contact form detected,Loaded,8.7,Opened,Not fou
 https://www.baunfire.com/,Failed,No contact form detected,Loaded,8.4,Opened,Not found,,,,,,,
 https://pixelwebsource.com,Failed,Turnstile widget not solved at pre-submit,Loaded,13.4,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not solved at pre-submit: Turnstile widget,,
 https://smileitsolutions.com,Failed,No contact form detected,Loaded,1.3,Opened,Not found,,,,,,,
+https://contactimpact.de/privacy,Partial,Submitted but missing:  name,Loaded,18.7,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Auto-solved at post-submit: Image CAPTCHA,Clicked: 'Anfrage absenden' (score=95),Success detected
+https://hubspot.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://viralwebmedia.com,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
