@@ -1448,3 +1448,4 @@ https://socialmodemedia.com/contact-us/,Success,Verified thank-you / redirect,Lo
 https://www.kobedigital.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://devopus.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,13.1,Opened,Found,6,"full_name,email,phone,company,select:Services,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),No confirmation
 https://chitrapublicity.com/#,Failed,No contact form detected,Loaded,2.7,Opened,Not found,,,,,,,
+https://creativesocean.in/contacts/,Success,Verified thank-you / redirect,Loaded,3.9,Opened,Found,5,"full_name,phone,email,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send message' (score=105),Success detected
