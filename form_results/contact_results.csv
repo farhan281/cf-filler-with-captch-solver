@@ -1450,3 +1450,4 @@ https://devopus.com/contact-us/,Failed,Submitted but no confirmation detected,Lo
 https://chitrapublicity.com/#,Failed,No contact form detected,Loaded,2.7,Opened,Not found,,,,,,,
 https://creativesocean.in/contacts/,Success,Verified thank-you / redirect,Loaded,3.9,Opened,Found,5,"full_name,phone,email,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send message' (score=105),Success detected
 https://chitra-b-publicity.com/contact-us/,Failed,,Loaded,1.6,Opened,Found,6,"full_name,company,email,phone,address,message","first_name,last_name,website,job_title,subject,budget",,Image OCR failed at pre-submit,,
+https://www.purplephase.com/contact,Failed,Submitted but no confirmation detected,Loaded,18.8,Opened,Found,6,"full_name,email,phone,company,address,message","first_name,last_name,website,job_title,subject,budget",,Auto-solved at post-submit: Image CAPTCHA,Clicked: 'Submit' (score=105),No confirmation
