@@ -1928,3 +1928,10 @@ https://www.fullofgracemarketing.com/,Failed,No contact form detected,Loaded,4.7
 https://govacreative.com/contact/,Success,Verified thank-you / redirect,Loaded,12.9,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=105),Success detected
 https://www.madmediatx.com/contact-5,Failed,Submitted but no confirmation detected,Loaded,4.0,Opened,Found,6,"first_name,last_name,email,phone,company,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=105),No confirmation
 https://creativenoggin.com,Failed,No contact form detected,Loaded,12.3,Opened,Not found,,,,,,,
+https://backyardstudios.com/talk-to-us/,Failed,No contact form detected,Loaded,6.3,Opened,Not found,,,,,,,
+https://bosscreative.com/contact/,Failed,Submitted but no confirmation detected,Loaded,9.2,Opened,Found,7,"first_name,last_name,company,email,phone,message,select:What have you budgeted for this project?","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=115),No confirmation
+https://marketingsolutions-tx.com/contact/,Failed,Submit failed: No submit button,Loaded,13.9,Opened,Found,6,"first_name,last_name,email,phone,select:Services*,message","full_name,company,website,job_title,subject,budget,address",,Not present,No submit button found,No success detected
+https://boydrojasadagency.com,Failed,No contact form detected,Loaded,13.9,Opened,Not found,,,,,,,
+https://leapinteractivellc.com/contact/,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,4.5,Opened,Found,6,"full_name,email,phone,company,select:Project Type,message","first_name,last_name,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
+https://cortomedia.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,3.5,Opened,Found,4,"full_name,email,message,phone","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=105),No confirmation
+https://marketing.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
