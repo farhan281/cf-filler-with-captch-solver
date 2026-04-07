@@ -2096,3 +2096,10 @@ https://affinitydesignhub.com/contact-us,Failed,Submitted but no confirmation de
 https://mcfarlanepromotions.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://casesondemand.net,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://pageladder.com,Failed,No contact form detected,Loaded,2.2,Opened,Not found,,,,,,,
+https://www.iprospect.com/contact/,Success,Verified thank-you / redirect,Loaded,1.3,Opened,Found,7,"first_name,last_name,job_title,email,company,select:MARKET*,message","full_name,phone,website,subject,budget,address",,Not present,Clicked: 'SEND' (score=115),Success detected
+https://www.google.com/url?q=https://ca202.minuteman.com/&opi=79508299&sa=U&ved=0ahUKEwjttOqS2duTAxXRSGcHHa1xOqwQ61gIFigQ&usg=AOvVaw0Bw51AOL-vgTzvItqTgVPW,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.approachseo.com/contact/,Failed,Submitted but no confirmation detected,Loaded,9.4,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Send' (score=115),No confirmation
+https://www.fastsigns.com/about-us/contact-fastsigns-corporate/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://synthesisinsights.com/contact/,Success,Verified thank-you / redirect,Loaded,2.0,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
+https://unbound-marketing.com/contact/,Failed,Submitted but no confirmation detected,Loaded,5.1,Opened,Found,6,"first_name,last_name,email,phone,subject,message","full_name,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),No confirmation
