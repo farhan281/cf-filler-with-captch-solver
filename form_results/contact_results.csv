@@ -1786,3 +1786,4 @@ https://agilecat.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://trestonemarketinggroup.com/#contact-us-1,Failed,Submitted but no confirmation detected,Loaded,4.3,Opened,Found,5,"company,full_name,phone,email,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT INQUIRY' (score=105),No confirmation
 https://careerprofiles.com,Failed,No contact form detected,Loaded,2.8,Opened,Not found,,,,,,,
 https://scribewise.com/contact-us/,Failed,No contact form detected,Loaded,3.2,Opened,Not found,,,,,,,
+https://gobraithwaite.com/contact/,Failed,Submitted but no confirmation detected,Loaded,4.2,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=120),No confirmation
