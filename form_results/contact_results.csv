@@ -1509,3 +1509,4 @@ https://rimsgfx.net/contact/,Success,Verified thank-you / redirect,Loaded,16.1,O
 https://7dayscreation.com/,Failed,No contact form detected,Loaded,2.9,Opened,Not found,,,,,,,
 https://otbideas.in,Failed,No contact form detected,Loaded,7.6,Opened,Not found,,,,,,,
 https://www.marshmallow.in/,Failed,No contact form detected,Loaded,6.9,Opened,Not found,,,,,,,
+https://thebrandwindow.com/get-in-touch,Failed,hCaptcha response not solved at pre-submit,Loaded,5.5,Opened,Found,6,"full_name,email,job_title,phone,company,select:Company Size *","first_name,last_name,website,subject,message,budget,address",,Not solved at pre-submit: hCaptcha response,,
