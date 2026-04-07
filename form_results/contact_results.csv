@@ -1473,3 +1473,23 @@ https://technomarketing.in,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://factualdesign.in,Failed,No contact form detected,Loaded,10.3,Opened,Not found,,,,,,,
 https://www.excellentpublicity.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.craywingz.com/contact-us,Partial,Submitted but missing: email,Loaded,3.4,Opened,Found,4,"full_name,phone,select:Business Type
+Corporate
+MNC
+National Brand
+Startup
+Real Estate Company
+FMCG Brand
+Hospitality
+Gaming
+Others,select:Interested Service
+Branding
+Social Media
+Brand Mandet
+Creative Mandet
+DVCs & TVCs
+Animation
+OOH Campaigns
+Website UI/UX
+Packaging Design
+Event Creative Curation","first_name,last_name,email,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
