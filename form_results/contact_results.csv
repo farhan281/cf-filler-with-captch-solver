@@ -1564,3 +1564,4 @@ https://www.seerinteractive.com/contact,Success,Verified thank-you / redirect,Lo
 https://tidycal.com/seohelpnow,Failed,No contact form detected,Loaded,9.4,Opened,Not found,,,,,,,
 https://rise.co/contact,Failed,,Loaded,8.3,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
 https://the215guys.com,Failed,No contact form detected,Loaded,1.9,Opened,Not found,,,,,,,
+https://frshlabs.co/contact/,Failed,Submitted but no confirmation detected,Loaded,2.5,Opened,Found,3,"select:cities,first_name,email","last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=120),No confirmation
