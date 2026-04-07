@@ -1549,3 +1549,4 @@ https://rojaweb.com/contact/,Success,Verified thank-you / redirect,Loaded,5.6,Op
 https://www.bccinteractive.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://padulamedia.com,Failed,No contact form detected,Loaded,19.1,Not found,Not found,,,,,,,
 https://keymedium.com/,Failed,No contact form detected,Loaded,6.2,Opened,Not found,,,,,,,
+https://1seo.com/contact-us/,Success,Success detected (submit not tracked),Loaded,5.0,Opened,Found,6,"first_name,last_name,email,phone,company,select:Your Vertical*","full_name,website,job_title,subject,message,budget,address",,Not present,No submit button found,Success detected
