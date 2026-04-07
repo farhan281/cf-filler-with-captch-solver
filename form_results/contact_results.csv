@@ -1453,3 +1453,4 @@ https://chitra-b-publicity.com/contact-us/,Failed,,Loaded,1.6,Opened,Found,6,"fu
 https://www.purplephase.com/contact,Failed,Submitted but no confirmation detected,Loaded,18.8,Opened,Found,6,"full_name,email,phone,company,address,message","first_name,last_name,website,job_title,subject,budget",,Auto-solved at post-submit: Image CAPTCHA,Clicked: 'Submit' (score=105),No confirmation
 https://www.publicitypoint.in/contact/,Failed,No contact form detected,Loaded,18.4,Opened,Not found,,,,,,,
 https://flyinglionmedia.net,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://teamflourish.co,Success,Verified thank-you / redirect,Loaded,9.4,Opened,Found,6,"full_name,phone,email,company,address,message","first_name,last_name,website,job_title,subject,budget",,Not present,Clicked: 'Submit' (score=105),Success detected
