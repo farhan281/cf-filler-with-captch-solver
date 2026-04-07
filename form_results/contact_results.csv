@@ -1948,3 +1948,7 @@ https://sofacouchmedia.com/contact/,Failed,No contact form detected,Loaded,8.4,O
 https://www.wearerevsocial.com,Failed,No contact form detected,Loaded,2.8,Opened,Not found,,,,,,,
 https://klikbrandstudio.com,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://www.bleqk.media/contact-us,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,17.6,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
+https://www.socialagencygroup.com/contact,Success,Verified thank-you / redirect,Loaded,3.9,Opened,Found,5,"full_name,email,phone,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
+https://visionsocialmediamarketing.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
