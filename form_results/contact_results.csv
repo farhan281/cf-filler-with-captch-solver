@@ -1904,3 +1904,4 @@ https://gandhimediasolutions.com/contact.php,Failed,No contact form detected,Loa
 https://www.gdc-co.com/contact/,Success,Verified thank-you / redirect,Loaded,6.9,Opened,Found,4,"full_name,email,company,message","first_name,last_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://staunchdigitalmarketing.com/contact-us/,Success,Verified thank-you / redirect,Loaded,3.0,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send' (score=105),Success detected
 https://digitaltechnolabs.com/#contactus,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://digitalpundit.in,Failed,No form fields detected,Loaded,7.7,Opened,Found,0,,,,,,
