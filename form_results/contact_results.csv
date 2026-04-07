@@ -1515,3 +1515,4 @@ https://bitly.com/pages/contact,Failed,No contact form detected,Loaded,14.1,Open
 https://www.brandaid.in/contact,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,4.3,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
 https://www.sandhyabranding.com/contact.php,Failed,Submitted but no confirmation detected,Loaded,16.6,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'SUBMIT NOW' (score=110),No confirmation
 https://mintomedia.in,Failed,No contact form detected,Loaded,1.0,Opened,Not found,,,,,,,
+https://adeves.com/contact/,Failed,No contact form detected,Loaded,2.8,Opened,Not found,,,,,,,
