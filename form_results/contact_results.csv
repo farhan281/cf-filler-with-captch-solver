@@ -2092,3 +2092,6 @@ https://www.google.com/url?q=http://www.1159creative.com/&opi=79508299&sa=U&ved=
 https://www.idiom.co/contact/,Failed,No contact form detected,Loaded,10.0,Opened,Not found,,,,,,,
 https://www.palmeradagency.com/contact-us,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://chemistrypr.com,Failed,No contact form detected,Loaded,9.4,Not found,Not found,,,,,,,
+https://affinitydesignhub.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,15.2,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),No confirmation
+https://mcfarlanepromotions.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
