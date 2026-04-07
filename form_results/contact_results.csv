@@ -2086,3 +2086,6 @@ https://klickerinc.com/contact/,Failed,No contact form detected,Loaded,6.2,Opene
 https://www.theantoneye.com/,Success,Verified thank-you / redirect,Loaded,6.5,Opened,Found,6,"company,first_name,last_name,email,message,website","full_name,phone,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=60),Success detected
 https://freaner.com/contact/,Failed,Submitted but no confirmation detected,Loaded,10.4,Opened,Found,4,"full_name,email,company,message","first_name,last_name,phone,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Submit event: submit-event,No confirmation
 https://stitchmarketingresearch.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://ljg.com/,Failed,No contact form detected,Loaded,13.0,Opened,Not found,,,,,,,
+https://gaslampevent.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.google.com/url?q=http://www.1159creative.com/&opi=79508299&sa=U&ved=0ahUKEwiYrYnh19uTAxXnTGwGHZoBA40Q61gIEigP&usg=AOvVaw1gVFghXZbIZBCxBG4SYNu9,Failed,No contact form detected,Loaded,15.4,Opened,Not found,,,,,,,
