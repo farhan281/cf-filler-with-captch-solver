@@ -1706,3 +1706,4 @@ https://yplocalsync.com/contact,Success,Verified thank-you / redirect,Loaded,5.0
 https://seolocale.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.3,Opened,Found,5,"first_name,phone,email,select:INTERESTED SERVICE*,message","last_name,full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=105),No confirmation
 https://revcarto.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://digitalforceagency.com/,Failed,No contact form detected,Loaded,3.5,Opened,Not found,,,,,,,
+https://www.easternstandard.com/contact-us/,Success,Verified thank-you / redirect,Loaded,14.2,Opened,Found,4,"first_name,email,website,message","last_name,full_name,phone,company,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=115),Success detected
