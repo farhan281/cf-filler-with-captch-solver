@@ -2070,3 +2070,4 @@ https://baskdigital.com,Success,Verified thank-you / redirect,Loaded,8.5,Opened,
 https://americancreativedesigners.com/contact-us,Failed,,Loaded,2.7,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
 https://brand-north.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://www.communityboost.org/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
