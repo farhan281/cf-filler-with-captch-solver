@@ -1467,3 +1467,8 @@ https://www.smartfish.co.in/contact-us/,Failed,Turnstile widget not solved at pr
 https://www.pixenite.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,13.5,Opened,Found,5,"full_name,email,subject,phone,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'Send Message' (score=105),No confirmation
 https://businessvolunteers.online/#contact,Success,Verified thank-you / redirect,Loaded,3.9,Opened,Found,4,"full_name,email,select:SERVICE,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=105),Success detected
 https://monkmediaone.com/contact-us/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://reflectbranding.com/contact-us-main/,Failed,hCaptcha iframe not solved at pre-submit,Loaded,6.9,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not solved at pre-submit: hCaptcha iframe,,
+https://dmtechstudio.com/contact.php,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://technomarketing.in,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://factualdesign.in,Failed,No contact form detected,Loaded,10.3,Opened,Not found,,,,,,,
