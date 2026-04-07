@@ -1971,3 +1971,5 @@ https://www.cmglocalsolutions.com/contact-us,Success,Verified thank-you / redire
 https://worldandweb.com/contact_us.php,Failed,Submitted but no confirmation detected,Loaded,4.1,Opened,Found,4,"full_name,email,message,phone","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: '>> Make Contact' (score=90),No confirmation
 https://www.siteworkswebsites.com/,Failed,No contact form detected,Loaded,8.1,Opened,Not found,,,,,,,
 https://kissmarketing.com,Failed,No contact form detected,Loaded,3.3,Opened,Not found,,,,,,,
+https://innov8.place,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
