@@ -1440,3 +1440,4 @@ https://pixelwebdesigns.in/ContactUs.aspx,Success,Verified thank-you / redirect,
 https://agital.com/contact/,Skipped,Submitted but no confirmation detected,Loaded,1.7,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Send' (score=105),No confirmation
 https://salterrasite.com,Partial,Submitted but missing:  name,Loaded,14.3,Opened,Found,3,"email,phone,message","first_name,last_name,full_name,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],Success detected
 https://webchanakya.com,Failed,No contact form detected,Loaded,6.2,Not found,Not found,,,,,,,
+https://logomatics.com,Failed,No contact form detected,Loaded,13.9,Opened,Not found,,,,,,,
