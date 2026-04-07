@@ -1671,3 +1671,4 @@ https://bemarketing.com/contact/,Success,Verified thank-you / redirect,Loaded,7.
 https://www.helmcreativestudio.com/,Failed,No contact form detected,Loaded,4.6,Opened,Not found,,,,,,,
 https://payperlead.com,Failed,No contact form detected,Loaded,4.4,Opened,Not found,,,,,,,
 https://www.coheremade.com/contact,Failed,,Loaded,1.4,Opened,Found,7,"full_name,company,website,email,phone,address,message","first_name,last_name,job_title,subject,budget",,Image OCR failed at pre-submit,,
+https://xhilarate.com/contact-us/,Failed,,Loaded,5.7,Opened,Found,1,message,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
