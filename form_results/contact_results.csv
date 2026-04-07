@@ -2177,3 +2177,5 @@ https://sureexposure.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://agilewebstudios.com,Failed,No contact form detected,Loaded,2.1,Opened,Not found,,,,,,,
 https://solutionxmarketing.com/contact-us/,Failed,No contact form detected,Loaded,2.5,Opened,Not found,,,,,,,
 https://www.gozonic.com/get-a-quote,Failed,No contact form detected,Loaded,4.9,Opened,Not found,,,,,,,
+https://eventusseo.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
