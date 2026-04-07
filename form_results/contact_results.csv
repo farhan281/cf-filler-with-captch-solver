@@ -1746,3 +1746,4 @@ https://www.thinkcompany.com/contact/,Failed,No contact form detected,Loaded,6.2
 https://leadforgers.com,Failed,No contact form detected,Loaded,2.7,Opened,Not found,,,,,,,
 https://biondocreative.com,Failed,No contact form detected,Loaded,2.4,Opened,Not found,,,,,,,
 https://phillywebworks.com,Failed,Submitted but no confirmation detected,Loaded,5.6,Opened,Found,4,"full_name,email,company,message","first_name,last_name,phone,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://mediaproper.com,Success,Verified thank-you / redirect,Loaded,9.1,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
