@@ -2137,3 +2137,5 @@ https://contactimpact.de/privacy,Partial,Submitted but missing:  name,Loaded,18.
 https://hubspot.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://viralwebmedia.com,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://metamind.digital,Skipped,"unknown error: net::ERR_SSL_PROTOCOL_ERROR
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
