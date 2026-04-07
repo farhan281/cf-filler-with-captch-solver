@@ -1810,3 +1810,6 @@ https://albertocarniel.com,Failed,No contact form detected,Loaded,3.6,Opened,Not
 https://www.tpgdirect.com/contact/,Failed,No contact form detected,Loaded,11.5,Opened,Not found,,,,,,,
 https://www.m3mpr.com/,Failed,No contact form detected,Loaded,2.3,Opened,Not found,,,,,,,
 https://www.thevandergroup.com/contact,Failed,Submitted but no confirmation detected,Loaded,5.1,Opened,Found,5,"first_name,last_name,email,company,message","full_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'ABOUT' (score=45),No confirmation
+https://ourpplent.com/,Success,Verified thank-you / redirect,Loaded,6.6,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
+https://www.fourfront.us/contact/,Success,Verified thank-you / redirect,Loaded,5.0,Opened,Found,6,"full_name,email,company,phone,website,message","first_name,last_name,job_title,subject,budget,address",,Auto-solved at post-submit: Image CAPTCHA,Clicked: 'Google Ad Tech Provider' (score=65),Success detected
+https://www.reelmediaagency.com/,Failed,No contact form detected,Loaded,13.0,Opened,Not found,,,,,,,
