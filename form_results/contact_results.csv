@@ -2175,3 +2175,4 @@ https://www.chikara.digital/,Failed,No contact form detected,Loaded,6.0,Opened,N
 https://www.getsetgoweb.com/contact-us/,Success,Verified thank-you / redirect,Loaded,8.1,Opened,Found,5,"full_name,email,phone,subject,message","first_name,last_name,company,website,job_title,budget,address",,Not present,Clicked: 'GET IN TOUCH' (score=65),Success detected
 https://sureexposure.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://agilewebstudios.com,Failed,No contact form detected,Loaded,2.1,Opened,Not found,,,,,,,
+https://solutionxmarketing.com/contact-us/,Failed,No contact form detected,Loaded,2.5,Opened,Not found,,,,,,,
