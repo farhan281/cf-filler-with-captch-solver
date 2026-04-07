@@ -2019,3 +2019,4 @@ https://www.bol-agency.com/contact,Skipped,Submitted but no confirmation detecte
 https://www.clicktrackmarketing.com/contact-us,Failed,No contact form detected,Loaded,10.0,Opened,Not found,,,,,,,
 https://brandbuzzcreatives.com/Contact-Us,Success,Verified thank-you / redirect,Loaded,4.9,Opened,Found,6,"full_name,phone,email,address,select:source,message","first_name,last_name,company,website,job_title,subject,budget",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit' (score=105),Success detected
 https://eclipsemarketing.io,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://camppublicrelations.com/contact,Failed,No form fields detected,Loaded,5.3,Opened,Found,0,,,,,,
