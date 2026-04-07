@@ -2009,3 +2009,7 @@ https://billygeneismarketing.com/,Failed,No contact form detected,Loaded,10.3,No
 https://johnelincoln.com/contact/,Failed,Submitted but no confirmation detected,Loaded,5.3,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Email John' (score=90),No confirmation
 https://www.bopdesign.com/contact/,Success,Verified thank-you / redirect,Loaded,1.5,Opened,Found,5,"first_name,last_name,email,company,phone","full_name,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Send away!' (score=105),Success detected
 https://www.mediajetmarketing.com/contact,Failed,Submitted but no confirmation detected,Loaded,3.6,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Submit event: null,No confirmation
+https://mancecreative.com,Success,Verified thank-you / redirect,Loaded,6.4,Opened,Found,6,"full_name,email,phone,company,select:How did you hear about us? *,message","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,form.submit(): form[0],Success detected
+https://springergraphicdesign.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://www.alcreo.com/contact,Failed,No form fields detected,Loaded,2.2,Opened,Found,0,,,,,,
