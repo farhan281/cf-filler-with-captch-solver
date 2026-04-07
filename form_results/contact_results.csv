@@ -1618,3 +1618,15 @@ https://www.olliemarketing.com/,Failed,No contact form detected,Loaded,5.8,Opene
 https://stackmatix.com,Failed,No contact form detected,Loaded,6.3,Opened,Not found,,,,,,,
 https://www.ideapeddler.com/contact,Success,Verified thank-you / redirect,Loaded,16.9,Opened,Found,7,"full_name,email,company,phone,message,select:Services Needed*,select:Budget*","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://admen.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://hmgcreative.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://faceplantcreative.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://redcactusmedia.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://socialbehavior.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://middlewaymarketing.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://envision-creative.com,Partial,Submitted but missing:  name,Loaded,17.2,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://www.hitch.co/contact,Failed,No contact form detected,Loaded,9.0,Opened,Not found,,,,,,,
+https://www.fahrenheitmarketing.com/contact,Skipped,Submitted but no confirmation detected,Loaded,2.0,Opened,Found,9,"first_name,last_name,email,phone,company,subject,select:Primary Industry,select:What would you like to chat about?,message","full_name,website,job_title,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=105),No confirmation
+https://www.madebyrodeo.co/get-in-touch,Failed,,Loaded,2.5,Opened,Found,6,"first_name,last_name,email,phone,address,message","full_name,company,website,job_title,subject,budget",,Image OCR failed at pre-submit,,
+https://adspaceagency.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://livingproofcreative.com,Success,Verified thank-you / redirect,Loaded,6.3,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://heartofthesun.co/contact,Failed,Submitted but no confirmation detected,Loaded,5.4,Opened,Found,4,"first_name,email,phone,message","last_name,full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=105),No confirmation
