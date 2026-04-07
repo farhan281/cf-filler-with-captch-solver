@@ -1867,3 +1867,4 @@ https://nxtgenweb.com/contact-us/,Success,Verified thank-you / redirect,Loaded,2
 https://triovate.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,4.5,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Increase My Sales' (score=90),No confirmation
 https://advekta.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://authoritysolutions.com,Failed,No contact form detected,Loaded,0.7,Opened,Not found,,,,,,,
+https://klip.media,Failed,No contact form detected,Loaded,15.6,Opened,Not found,,,,,,,
