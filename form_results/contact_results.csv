@@ -1703,3 +1703,6 @@ https://www.phillycontentconsultant.com/,Failed,No contact form detected,Loaded,
 https://grouplevinson.com,Success,Verified thank-you / redirect,Loaded,4.4,Opened,Found,6,"full_name,email,company,phone,subject,message","first_name,last_name,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://devoedigital.com,Failed,No contact form detected,Loaded,1.9,Opened,Not found,,,,,,,
 https://yplocalsync.com/contact,Success,Verified thank-you / redirect,Loaded,5.0,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=105),Success detected
+https://seolocale.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,3.3,Opened,Found,5,"first_name,phone,email,select:INTERESTED SERVICE*,message","last_name,full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=105),No confirmation
+https://revcarto.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://digitalforceagency.com/,Failed,No contact form detected,Loaded,3.5,Opened,Not found,,,,,,,
