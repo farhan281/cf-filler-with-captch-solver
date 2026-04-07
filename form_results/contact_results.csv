@@ -1441,3 +1441,4 @@ https://agital.com/contact/,Skipped,Submitted but no confirmation detected,Loade
 https://salterrasite.com,Partial,Submitted but missing:  name,Loaded,14.3,Opened,Found,3,"email,phone,message","first_name,last_name,full_name,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],Success detected
 https://webchanakya.com,Failed,No contact form detected,Loaded,6.2,Not found,Not found,,,,,,,
 https://logomatics.com,Failed,No contact form detected,Loaded,13.9,Opened,Not found,,,,,,,
+https://onadvertising.com/contact-us/,Success,Verified thank-you / redirect,Loaded,6.1,Opened,Found,7,"full_name,company,email,phone,select:Inquiry Type,select:How Did You Hear About Us?,message","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: Image CAPTCHA,Clicked: 'SUBMIT' (score=105),Success detected
