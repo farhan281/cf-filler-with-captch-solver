@@ -1501,3 +1501,7 @@ Digital Advertising
 Website Development,message","first_name,last_name,website,job_title,budget,address",,Not present,Clicked: 'Get a Quote' (score=70),Success detected
 https://www.wth-hype.com/contact,Failed,No contact form detected,Loaded,3.4,Opened,Not found,,,,,,,
 https://www.xadaxbranddesign.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://dittomedia.in/contact/,Success,Verified thank-you / redirect,Loaded,10.9,Opened,Found,7,"select:Select Service,full_name,email,phone,company,message,select:How did you hear about us?","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
+https://zerogravitycommunications.com/contact-us/,Success,Verified thank-you / redirect,Loaded,14.5,Opened,Found,6,"full_name,phone,email,address,company,message","first_name,last_name,website,job_title,subject,budget",,Auto-solved at post-submit: reCAPTCHA v2,No submit button found,Success detected
+https://brandinboss.com/?post_type=wpcf7_contact_form&p=1,Failed,No contact form detected,Loaded,7.2,Opened,Not found,,,,,,,
+https://funkydevelopers.com/contact-us.php,Failed,No contact form detected,Loaded,10.9,Opened,Not found,,,,,,,
