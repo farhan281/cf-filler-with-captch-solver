@@ -2071,3 +2071,4 @@ https://americancreativedesigners.com/contact-us,Failed,,Loaded,2.7,Opened,Found
 https://brand-north.com,Skipped,"unknown error: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://www.communityboost.org/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://drinks.com/contact,Success,Verified thank-you / redirect,Loaded,12.3,Opened,Found,8,"select:What would you like to discuss?,first_name,last_name,email,phone,website,message,company","full_name,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=100),Success detected
