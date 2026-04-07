@@ -1641,3 +1641,14 @@ https://www.larsonmarketingproject.com/contact-brine,Failed,Submitted but no con
 https://www.builtbyworkhorse.com/contact/,Failed,Turnstile widget not solved at pre-submit,Loaded,3.8,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Not solved at pre-submit: Turnstile widget,,
 https://koalendar.com/contact,Failed,No contact form detected,Loaded,5.9,Opened,Not found,,,,,,,
 https://jaymehta.co,Failed,Submitted but no confirmation detected,Loaded,8.0,Opened,Found,5,"select:inquirydropdown,first_name,last_name,email,message","full_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT' (score=120),No confirmation
+https://blackswanmedia.co,Failed,No contact form detected,Loaded,8.8,Opened,Not found,,,,,,,
+https://socialcali.com/contact,Failed,Submitted but no confirmation detected,Loaded,2.2,Opened,Found,8,"first_name,last_name,email,phone,company,website,address,message","full_name,job_title,subject,budget",,Not present,Clicked: 'Open menu' (score=50),No confirmation
+https://roisociety.com,Failed,No contact form detected,Loaded,6.2,Opened,Not found,,,,,,,
+https://novodash.com/,Failed,No contact form detected,Loaded,16.4,Opened,Not found,,,,,,,
+https://cajasdigital.com/,Failed,No contact form detected,Loaded,5.9,Opened,Not found,,,,,,,
+https://slademarketing.com/contact/,Success,Verified thank-you / redirect,Loaded,1.7,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://nanatomedia.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://tastyplacement.com,Failed,No contact form detected,Loaded,2.7,Opened,Not found,,,,,,,
+https://blankboxdigital.com/#contact,Success,Verified thank-you / redirect,Loaded,1.8,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=120),Success detected
+https://www.visualhiveagency.io/,Success,Verified thank-you / redirect,Loaded,3.0,Opened,Found,6,"first_name,last_name,phone,email,company,message","full_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Start My Journey' (score=50),Success detected
+https://kingdomsocialmedia.com,Failed,Submitted but no confirmation detected,Loaded,7.4,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
