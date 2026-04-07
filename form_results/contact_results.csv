@@ -1940,3 +1940,5 @@ https://digiroimarketing.com/contact-us/,Failed,,Loaded,11.2,Opened,Found,9,"fir
 https://cnimagemarketing.com,Failed,No contact form detected,Loaded,5.2,Opened,Not found,,,,,,,
 https://kharvey.co/contact/,Failed,Submitted but no confirmation detected,Loaded,7.3,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=120),No confirmation
 https://andersonmarketing.com,Failed,No contact form detected,Loaded,6.3,Opened,Not found,,,,,,,
+https://coryames.com/,Failed,No contact form detected,Loaded,5.7,Opened,Not found,,,,,,,
+https://thekinderinfluence.com/,Failed,Submitted but no confirmation detected,Loaded,7.0,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,form.submit(): form[0],No confirmation
