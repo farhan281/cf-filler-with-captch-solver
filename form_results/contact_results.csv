@@ -1446,3 +1446,5 @@ https://stokestoke.com,Success,Verified thank-you / redirect,Loaded,4.3,Opened,F
 https://www.amazingthings.agency/contact,Failed,Submitted but no confirmation detected,Loaded,5.1,Opened,Found,4,"first_name,last_name,email,message","full_name,phone,company,website,job_title,subject,budget,address",,Not present,form.submit(): form[0],No confirmation
 https://socialmodemedia.com/contact-us/,Success,Verified thank-you / redirect,Loaded,4.0,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at pre-submit: Image CAPTCHA,Clicked: 'SUBMIT' (score=120),Success detected
 https://www.kobedigital.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://devopus.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,13.1,Opened,Found,6,"full_name,email,phone,company,select:Services,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),No confirmation
+https://chitrapublicity.com/#,Failed,No contact form detected,Loaded,2.7,Opened,Not found,,,,,,,
