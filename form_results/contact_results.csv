@@ -2095,3 +2095,4 @@ https://chemistrypr.com,Failed,No contact form detected,Loaded,9.4,Not found,Not
 https://affinitydesignhub.com/contact-us,Failed,Submitted but no confirmation detected,Loaded,15.2,Opened,Found,4,"full_name,phone,email,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),No confirmation
 https://mcfarlanepromotions.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://casesondemand.net,Skipped,Page load timeout,Timeout,,,,,,,,,,
