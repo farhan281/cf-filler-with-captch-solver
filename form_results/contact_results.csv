@@ -2143,3 +2143,4 @@ https://myproject100.com,Failed,No form fields detected,Loaded,20.0,Opened,Found
 https://wytlabs.com/contact/,Failed,No contact form detected,Loaded,4.5,Opened,Not found,,,,,,,
 https://webzin.co,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://starkmarketing.com/contact/,Success,Verified thank-you / redirect,Loaded,6.5,Opened,Found,5,"full_name,website,email,phone,message","first_name,last_name,company,job_title,subject,budget,address",,Not present,Clicked: 'Send Your Message' (score=105),Success detected
