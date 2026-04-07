@@ -2129,3 +2129,4 @@ https://sembyotic.com/contact/,Success,Verified thank-you / redirect,Loaded,5.2,
 https://bootstrapdigitalgroup.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://apswebsolution.com/contact-us/,Success,Verified thank-you / redirect,Loaded,10.1,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
 https://katandmouse.com/contact/,Success,Verified thank-you / redirect,Loaded,18.1,Opened,Found,8,"first_name,last_name,company,job_title,email,phone,website,message","full_name,subject,budget,address",,Not present,Clicked: 'Get Quote' (score=115),Success detected
+https://smarketors.com,Failed,No contact form detected,Loaded,8.7,Opened,Not found,,,,,,,
