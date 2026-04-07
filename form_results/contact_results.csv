@@ -2124,3 +2124,4 @@ http://www.friscowebsoft.com/contact-us/,Failed,Submitted but no confirmation de
 https://sites.google.com/view/pro-seo-agency-usa/contact-us,Failed,No contact form detected,Loaded,4.7,Opened,Not found,,,,,,,
 https://websiteseotoday.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://baymediasoft.com,Failed,Submitted but no confirmation detected,Loaded,7.7,Opened,Found,3,"full_name,email,phone","first_name,last_name,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'SUBMIT' (score=105),No confirmation
