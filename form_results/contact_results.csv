@@ -1610,3 +1610,11 @@ https://garan-agency.com,Failed,Submitted but no confirmation detected,Loaded,4.
 https://itscalledsolutions.com,Failed,No contact form detected,Loaded,4.3,Opened,Not found,,,,,,,
 https://topagency.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.munroe.com/contact/,Failed,Submitted but no confirmation detected,Loaded,4.5,Opened,Found,7,"first_name,last_name,company,phone,email,website,message","full_name,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=115),No confirmation
+https://navitasmarketing.com,Failed,Turnstile widget not solved at pre-submit,Loaded,17.3,Opened,Found,7,"first_name,company,phone,email,select:Untitled(Required),select:Type of Project(Required),message","last_name,full_name,website,job_title,subject,budget,address",,Not solved at pre-submit: Turnstile widget,,
+https://neonambition.com/contact-us/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://js-interactive.com,Failed,No contact form detected,Loaded,4.6,Opened,Not found,,,,,,,
+https://flash-mktg.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,12.6,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: Image CAPTCHA,form.submit(): form[0],No confirmation
+https://www.olliemarketing.com/,Failed,No contact form detected,Loaded,5.8,Opened,Not found,,,,,,,
+https://stackmatix.com,Failed,No contact form detected,Loaded,6.3,Opened,Not found,,,,,,,
+https://www.ideapeddler.com/contact,Success,Verified thank-you / redirect,Loaded,16.9,Opened,Found,7,"full_name,email,company,phone,message,select:Services Needed*,select:Budget*","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://admen.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
