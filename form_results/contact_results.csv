@@ -1586,3 +1586,4 @@ https://www.dot-sports.org,Failed,No contact form detected,Loaded,3.2,Opened,Not
 https://argyleinteractive.com/,Partial,Submitted but missing:  name,Loaded,4.6,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Send' (score=105),Success detected
 https://halfgenius.com/contact/,Success,Verified thank-you / redirect,Loaded,5.9,Opened,Found,6,"first_name,last_name,email,phone,subject,message","full_name,company,website,job_title,budget,address",,Not present,Clicked: 'SEND' (score=120),Success detected
 https://cybersearchseo.com/contact-us/,Failed,No contact form detected,Loaded,3.3,Opened,Not found,,,,,,,
+https://leadspruce.com,Failed,Submitted but no confirmation detected,Loaded,5.7,Opened,Found,5,"first_name,last_name,email,subject,message","full_name,phone,company,website,job_title,budget,address",,Not present,form.submit(): form[0],No confirmation
