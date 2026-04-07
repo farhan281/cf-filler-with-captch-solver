@@ -2180,3 +2180,4 @@ https://www.gozonic.com/get-a-quote,Failed,No contact form detected,Loaded,4.9,O
 https://eventusseo.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://emailonbusiness.com/contact/,Success,Verified thank-you / redirect,Loaded,8.3,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Click to submit' (score=105),Success detected
+https://metro.agency/connect/,Failed,No contact form detected,Loaded,2.7,Opened,Not found,,,,,,,
