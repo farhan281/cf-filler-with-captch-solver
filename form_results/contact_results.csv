@@ -1719,3 +1719,4 @@ https://www.vespermarketing.co/contact-us,Failed,Submitted but no confirmation d
 https://seoulfireconsulting.co,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://modworldwide.com,Failed,No contact form detected,Loaded,12.9,Opened,Not found,,,,,,,
+https://dynamicwaveconsulting.com,Success,Verified thank-you / redirect,Loaded,8.2,Opened,Found,8,"full_name,company,email,phone,select:How Can We Help? *,message,select:Your Project Budget *,select:How Soon Do You Need to Start *","first_name,last_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Schedule It!' (score=95),Success detected
