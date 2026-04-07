@@ -2128,3 +2128,4 @@ https://baymediasoft.com,Failed,Submitted but no confirmation detected,Loaded,7.
 https://sembyotic.com/contact/,Success,Verified thank-you / redirect,Loaded,5.2,Opened,Found,6,"first_name,last_name,company,email,phone,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
 https://bootstrapdigitalgroup.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://apswebsolution.com/contact-us/,Success,Verified thank-you / redirect,Loaded,10.1,Opened,Found,4,"full_name,email,subject,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,Clicked: 'Submit' (score=120),Success detected
+https://katandmouse.com/contact/,Success,Verified thank-you / redirect,Loaded,18.1,Opened,Found,8,"first_name,last_name,company,job_title,email,phone,website,message","full_name,subject,budget,address",,Not present,Clicked: 'Get Quote' (score=115),Success detected
