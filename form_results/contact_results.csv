@@ -1532,3 +1532,5 @@ https://www.phoenixtalentxbranding.com/,Skipped,Page load timeout,Timeout,,,,,,,
 https://www.homemadesocial.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.purefusionmedia.com/contactus,Failed,Submitted but no confirmation detected,Loaded,6.8,Opened,Found,4,"first_name,last_name,email,message","full_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: '×' (score=10),No confirmation
 https://www.facebook.com/help/instagram/261704639352628,Failed,No contact form detected,Loaded,12.8,Opened,Not found,,,,,,,
+https://ignitegrowthadvertising.lovable.app,Failed,No contact form detected,Loaded,13.2,Opened,Not found,,,,,,,
+https://growfusely.com/contact-us/,Success,Verified thank-you / redirect,Loaded,6.3,Opened,Found,6,"full_name,email,website,phone,select:What’s Your Monthly Marketing Budget?*,message","first_name,last_name,company,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=115),Success detected
