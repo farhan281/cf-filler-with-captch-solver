@@ -1526,3 +1526,6 @@ https://changersmedia.com/contact-us/,Failed,Submitted but no confirmation detec
 https://devopus.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.brandboardmedia.com/contact.php,Failed,Submitted but no confirmation detected,Loaded,16.2,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
 https://atticsalt.co/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.bridgephx.com/contact,Success,Verified thank-you / redirect,Loaded,10.1,Opened,Found,5,"first_name,email,phone,company,message","last_name,full_name,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Submit event: null,Success detected
+https://www.zionandzion.com/contact/,Success,Verified thank-you / redirect,Loaded,10.3,Opened,Found,7,"first_name,last_name,company,email,select:Country*,phone,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=120),Success detected
+https://www.phoenixtalentxbranding.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
