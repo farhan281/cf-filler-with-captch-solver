@@ -1991,3 +1991,4 @@ https://gigtime.com,Success,Verified thank-you / redirect,Loaded,14.7,Opened,Fou
 http://lessandmore.com/,Failed,Submitted but no confirmation detected,Loaded,5.4,Opened,Found,2,"email,message","first_name,last_name,full_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'GET STARTED' (score=115),No confirmation
 https://wisedigitalpartners.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.basicagency.com/contact,Failed,No form fields detected,Loaded,2.1,Opened,Found,0,,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,message,budget,address",,,,
+https://thecoastcreative.com/contact,Failed,Submitted but no confirmation detected,Loaded,14.6,Opened,Found,1,message,"first_name,last_name,full_name,email,phone,company,website,job_title,subject,budget,address",,Not present,Submit event: event-only,No confirmation
