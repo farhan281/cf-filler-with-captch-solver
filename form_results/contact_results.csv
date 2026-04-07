@@ -1970,3 +1970,4 @@ https://odysseydesignco.com,Success,Verified thank-you / redirect,Loaded,18.9,Op
 https://www.cmglocalsolutions.com/contact-us,Success,Verified thank-you / redirect,Loaded,13.1,Opened,Found,7,"first_name,last_name,email,phone,select:Industry*,company,select:CMG Markets (Dropdown)*","full_name,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
 https://worldandweb.com/contact_us.php,Failed,Submitted but no confirmation detected,Loaded,4.1,Opened,Found,4,"full_name,email,message,phone","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: '>> Make Contact' (score=90),No confirmation
 https://www.siteworkswebsites.com/,Failed,No contact form detected,Loaded,8.1,Opened,Not found,,,,,,,
+https://kissmarketing.com,Failed,No contact form detected,Loaded,3.3,Opened,Not found,,,,,,,
