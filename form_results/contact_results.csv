@@ -1726,3 +1726,4 @@ https://johnwalsh.design/#contact,Failed,,Loaded,3.8,Opened,Found,4,"full_name,e
 https://popthepixel.com/contact/,Failed,Submitted but no confirmation detected,Loaded,3.3,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submit' (score=120),No confirmation
 https://griflan.com/,Failed,No contact form detected,Loaded,3.0,Opened,Not found,,,,,,,
 https://www.phillywebteam.com/contact/,Failed,,Loaded,3.0,Opened,Found,4,"first_name,last_name,email,message","full_name,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://avenuewest.design,Failed,,Loaded,9.0,Opened,Found,6,"full_name,email,phone,website,budget,message","first_name,last_name,company,job_title,subject,address",,Image OCR failed at pre-submit,,
