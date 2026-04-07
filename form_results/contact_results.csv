@@ -2145,3 +2145,4 @@ https://webzin.co,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://starkmarketing.com/contact/,Success,Verified thank-you / redirect,Loaded,6.5,Opened,Found,5,"full_name,website,email,phone,message","first_name,last_name,company,job_title,subject,budget,address",,Not present,Clicked: 'Send Your Message' (score=105),Success detected
 https://blissdrive.com,Failed,Submitted but no confirmation detected,Loaded,17.3,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Submit event: submit-event,No confirmation
+https://enosdigitalmarketing.org/contact-us,Success,Verified thank-you / redirect,Loaded,3.5,Opened,Found,4,"full_name,message,phone,email","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit Form' (score=75),Success detected
