@@ -1981,3 +1981,9 @@ https://duable.com/,Success,Verified thank-you / redirect,Loaded,17.0,Opened,Fou
 https://proterraadvertising.com,Failed,No contact form detected,Loaded,7.8,Opened,Not found,,,,,,,
 https://www.digiwake.com/contact/,Failed,Submitted but no confirmation detected,Loaded,4.7,Opened,Found,5,"first_name,last_name,email,company,message","full_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=120),No confirmation
 https://www.independencetitleagent.com,Failed,No form fields detected,Loaded,10.3,Not found,Found,0,,,,,,
+https://www.blondecreative.com/contact-us/,Success,Verified thank-you / redirect,Loaded,11.7,Opened,Found,5,"first_name,last_name,email,select:Subject *,message","full_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
+https://garan-agency.com/,Failed,Submitted but no confirmation detected,Loaded,7.0,Opened,Found,5,"full_name,phone,email,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
+https://redrattlercreative.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,7.1,Opened,Found,5,"first_name,last_name,company,phone,email","full_name,website,job_title,subject,message,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Let's Talk' (score=120),No confirmation
+https://cyfrow.org,Failed,,Loaded,3.5,Opened,Found,8,"first_name,last_name,phone,email,company,website,select:html-select-5-21,message","full_name,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
+https://ringitup.com/contact/,Failed,No contact form detected,Loaded,5.6,Opened,Not found,,,,,,,
+https://odleworks.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
