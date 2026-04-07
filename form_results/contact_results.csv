@@ -1979,3 +1979,4 @@ https://www.eatitupmarketing.com/book-consult,Failed,No contact form detected,Lo
 https://www.levelupconsultinggroup.net/,Failed,No contact form detected,Loaded,2.8,Opened,Not found,,,,,,,
 https://duable.com/,Success,Verified thank-you / redirect,Loaded,17.0,Opened,Found,3,"first_name,last_name,email","full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,Clicked: 'SIGN UP' (score=75),Success detected
 https://proterraadvertising.com,Failed,No contact form detected,Loaded,7.8,Opened,Not found,,,,,,,
+https://www.digiwake.com/contact/,Failed,Submitted but no confirmation detected,Loaded,4.7,Opened,Found,5,"first_name,last_name,email,company,message","full_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND MESSAGE' (score=120),No confirmation
