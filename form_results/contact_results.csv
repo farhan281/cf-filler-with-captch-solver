@@ -1525,3 +1525,4 @@ https://brandingbirds.com/contact/,Success,Verified thank-you / redirect,Loaded,
 https://changersmedia.com/contact-us/,Failed,Submitted but no confirmation detected,Loaded,6.7,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit Message' (score=110),No confirmation
 https://devopus.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.brandboardmedia.com/contact.php,Failed,Submitted but no confirmation detected,Loaded,16.2,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
+https://atticsalt.co/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
