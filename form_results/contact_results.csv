@@ -1732,3 +1732,4 @@ https://www.contactdesigners.com,Failed,No contact form detected,Loaded,15.6,Ope
 https://bluesquareweb.com,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://www.webwizarddev.com/contact,Success,Verified thank-you / redirect,Loaded,1.6,Opened,Found,6,"full_name,email,phone,select:Project Type *,select:Budget Range *,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send Message' (score=100),Success detected
 https://pixelparlor.com/contact/,Failed,Submitted but no confirmation detected,Loaded,15.3,Opened,Found,5,"first_name,last_name,company,email,select:I want to","full_name,phone,website,job_title,subject,message,budget,address",,Not present,Clicked: 'Submit' (score=115),No confirmation
+https://www.tryvitris.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
