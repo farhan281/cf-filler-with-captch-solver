@@ -2164,3 +2164,4 @@ https://digiqormedia.com,Failed,No contact form detected,Loaded,5.2,Opened,Not f
 https://websavvy-consulting.com/contact/,Failed,Submitted but no confirmation detected,Loaded,5.0,Opened,Found,6,"first_name,last_name,email,phone,company,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=120),No confirmation
 https://dogbytesdigital.com/,Failed,No contact form detected,Loaded,8.2,Opened,Not found,,,,,,,
 https://www.jm-seo.org/contact/,Failed,No contact form detected,Loaded,5.2,Opened,Not found,,,,,,,
+https://sanjosewebdesigns.com/contact/,Success,Verified thank-you / redirect,Loaded,2.5,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'SUBMIT MESSAGE' (score=95),Success detected
