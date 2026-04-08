@@ -2326,3 +2326,5 @@ https://coloronegroup.com,Skipped,"unknown error: net::ERR_SSL_PROTOCOL_ERROR
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://www.sanjose.org/contact,Partial,Submitted but missing:  name,Loaded,10.0,Opened,Found,1,email,"first_name,last_name,full_name,phone,company,website,job_title,subject,message,budget,address",,Not present,form.submit(): form[0],Success detected
 https://opentechmedia.com,Failed,No contact form detected,Loaded,11.7,Opened,Not found,,,,,,,
+https://fwamarketing.com,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
