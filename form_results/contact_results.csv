@@ -2250,3 +2250,4 @@ https://solutionarianmarketing.com/contact/,Success,Verified thank-you / redirec
 https://www.tntdigitalmarketing.com/contact-us,Success,Verified thank-you / redirect,Loaded,2.5,Opened,Found,5,"first_name,last_name,phone,email,message","full_name,company,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Submit' (score=80),Success detected
 https://expdigitalmarketing.co,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://newaimarketing.com/contact-us,Success,Verified thank-you / redirect,Loaded,3.3,Opened,Found,7,"first_name,last_name,email,phone,company,website,message","full_name,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submmit Now' (score=50),Success detected
