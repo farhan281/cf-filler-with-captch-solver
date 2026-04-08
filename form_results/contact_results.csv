@@ -2246,3 +2246,4 @@ https://nika.agency/contact/,Failed,Submitted but no confirmation detected,Loade
 Submit' (score=95)",No confirmation
 https://thecontigo.in/contact/,Failed,Submitted but no confirmation detected,Loaded,8.8,Opened,Found,7,"first_name,last_name,email,phone,company,website,message","full_name,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Send Message' (score=120),No confirmation
 https://shirudigi.com/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://solutionarianmarketing.com/contact/,Success,Verified thank-you / redirect,Loaded,4.7,Opened,Found,6,"first_name,last_name,company,phone,email,message","full_name,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'SUBMIT FORM' (score=120),Success detected
