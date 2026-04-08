@@ -2203,3 +2203,4 @@ https://cyrusson.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://rydigital.us/contact/,Failed,Submitted but no confirmation detected,Loaded,5.9,Opened,Found,1,email,"""first_name",last_name,full_name,phone,company
 https://gumas.com,Success,Verified thank-you / redirect,Loaded,10.2,Opened,Found,2,"full_name,email","first_name,last_name,phone,company,website,job_title,subject,message,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'SUBSCRIBE' (score=75),Success detected
 https://spritzsf.com/?utm_source=google&utm_medium=gmb&utm_campaign=organic,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.zingpopsocial.com/contact,Skipped,Page load timeout,Timeout,,,,,,,,,,
