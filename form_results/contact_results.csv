@@ -2337,3 +2337,4 @@ https://clay.global/contact,Failed,No contact form detected,Loaded,6.5,Opened,No
 https://marketingrightnow.com,Failed,No contact form detected,Loaded,2.6,Opened,Not found,,,,,,,
 https://uvdigitalsolution.com/contact-us/,Skipped,Submitted but no confirmation detected,Loaded,14.4,Opened,Found,5,"full_name,email,phone,select:form_fields[field_d0c7827],message","first_name,last_name,company,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Send' (score=105),No confirmation
 https://www.sunlightdigitech.com/contact/,Success,Verified thank-you / redirect,Loaded,3.6,Opened,Found,5,"full_name,email,phone,company,message","first_name,last_name,website,job_title,subject,budget,address",,Not present,Clicked: 'submit' (score=105),Success detected
+https://fsimf.com,Failed,No contact form detected,Loaded,1.3,Opened,Not found,,,,,,,
