@@ -2333,3 +2333,5 @@ https://www.gummicube.com/#contact,Success,Verified thank-you / redirect,Loaded,
 https://www.tdoconsulting.com/,Failed,No contact form detected,Loaded,4.0,Opened,Not found,,,,,,,
 https://serpmasters.com/#Contact,Failed,Submitted but no confirmation detected,Loaded,14.5,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'SEND MESSAGE' (score=105),No confirmation
 https://californiasigncompany.net,Success,Verified thank-you / redirect,Loaded,7.1,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Not present,Clicked: 'GET MY QUOTE' (score=75),Success detected
+https://clay.global/contact,Failed,No contact form detected,Loaded,6.5,Opened,Not found,,,,,,,
+https://marketingrightnow.com,Failed,No contact form detected,Loaded,2.6,Opened,Not found,,,,,,,
