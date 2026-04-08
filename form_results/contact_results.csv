@@ -2261,3 +2261,4 @@ https://webmarketingsanjose.com/contact.html,Success,Verified thank-you / redire
 https://elkinsadvertising.com/lets-talk,Failed,No contact form detected,Loaded,18.5,Opened,Not found,,,,,,,
 https://e8-labs.com,Skipped,"unknown error: net::ERR_CONNECTION_REFUSED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+http://luminapr.com/,Success,Verified thank-you / redirect,Loaded,8.9,Opened,Found,7,"select:Interested In*,first_name,last_name,company,email,phone,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Submit' (score=105),Success detected
