@@ -2359,3 +2359,4 @@ https://www.webinteractiveconsulting.com/,Failed,No contact form detected,Loaded
 https://www.kulturedigital.com/whos-next/,Failed,No contact form detected,Loaded,4.3,Opened,Not found,,,,,,,
 https://completeseo.com/contact/,Success,Verified thank-you / redirect,Loaded,1.7,Opened,Found,4,"full_name,email,website,phone","first_name,last_name,company,job_title,subject,message,budget,address",,Not present,Clicked: 'Get Started' (score=120),Success detected
 https://www.waldenmediagroup.com/contact,Failed,Submitted but no confirmation detected,Loaded,4.4,Opened,Found,8,"first_name,last_name,phone,email,company,select:Relationship to WMG,select:Where can we support?,message","full_name,website,job_title,subject,budget,address",,Not present,Clicked: 'Get Started' (score=100),No confirmation
+https://insigniaseo.com/contact-us/,Failed,No contact form detected,Loaded,8.0,Opened,Not found,,,,,,,
