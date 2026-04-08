@@ -2237,3 +2237,4 @@ https://www.localbiznetwork.com/contact.php,Skipped,reCAPTCHA v2 rate-limited at
 https://legacymarketingsolutions.co,Failed,No contact form detected,Loaded,1.9,Opened,Not found,,,,,,,
 https://beyond-fusian.ueniweb.com/#contact_us,Success,Verified thank-you / redirect,Loaded,8.4,Opened,Found,4,"message,full_name,email,phone","first_name,last_name,company,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Send Message' (score=75),Success detected
 https://digitalexpand.com/contact/,Success,Verified thank-you / redirect,Loaded,4.4,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Connect Now' (score=90),Success detected
+https://dotivate.com/contact/,Failed,No contact form detected,Loaded,6.7,Opened,Not found,,,,,,,
