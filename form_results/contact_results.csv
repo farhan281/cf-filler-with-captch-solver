@@ -2238,3 +2238,5 @@ https://legacymarketingsolutions.co,Failed,No contact form detected,Loaded,1.9,O
 https://beyond-fusian.ueniweb.com/#contact_us,Success,Verified thank-you / redirect,Loaded,8.4,Opened,Found,4,"message,full_name,email,phone","first_name,last_name,company,website,job_title,subject,budget,address",,Rate-limited at post-submit: reCAPTCHA v2,Clicked: 'Send Message' (score=75),Success detected
 https://digitalexpand.com/contact/,Success,Verified thank-you / redirect,Loaded,4.4,Opened,Found,3,"full_name,email,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Connect Now' (score=90),Success detected
 https://dotivate.com/contact/,Failed,No contact form detected,Loaded,6.7,Opened,Not found,,,,,,,
+https://www.profitablemedia.com/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
+https://www.sjsu.edu/contact/index.php,Failed,,Loaded,11.4,Opened,Found,4,"full_name,email,message,select:Please select a category for your question","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
