@@ -2254,3 +2254,4 @@ https://newaimarketing.com/contact-us,Success,Verified thank-you / redirect,Load
 https://trafficmeansbusiness.com/contact.php,Failed,,Loaded,2.8,Opened,Found,5,"full_name,email,phone,address,message","first_name,last_name,company,website,job_title,subject,budget",,Image OCR failed at pre-submit,,
 https://www.kooltura.com/,Failed,Submitted but no confirmation detected,Loaded,2.4,Opened,Found,3,"email,subject,message","first_name,last_name,full_name,phone,company,website,job_title,budget,address",,Not present,form.submit(): form[0],No confirmation
 https://peerspace.com,Failed,No contact form detected,Loaded,1.1,Opened,Not found,,,,,,,
+https://www.contentric.com/contact-us,Success,Verified thank-you / redirect,Loaded,5.6,Opened,Found,5,"first_name,last_name,company,email,message","full_name,phone,website,job_title,subject,budget,address",,Auto-solved at pre-submit: reCAPTCHA v2,Clicked: 'Let’s do this' (score=75),Success detected
