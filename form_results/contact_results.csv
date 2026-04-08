@@ -2252,3 +2252,5 @@ https://expdigitalmarketing.co,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVE
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
 https://newaimarketing.com/contact-us,Success,Verified thank-you / redirect,Loaded,3.3,Opened,Found,7,"first_name,last_name,email,phone,company,website,message","full_name,job_title,subject,budget,address",,Auto-solved at post-submit: reCAPTCHA v2,Clicked: 'Submmit Now' (score=50),Success detected
 https://trafficmeansbusiness.com/contact.php,Failed,,Loaded,2.8,Opened,Found,5,"full_name,email,phone,address,message","first_name,last_name,company,website,job_title,subject,budget",,Image OCR failed at pre-submit,,
+https://www.kooltura.com/,Failed,Submitted but no confirmation detected,Loaded,2.4,Opened,Found,3,"email,subject,message","first_name,last_name,full_name,phone,company,website,job_title,budget,address",,Not present,form.submit(): form[0],No confirmation
+https://peerspace.com,Failed,No contact form detected,Loaded,1.1,Opened,Not found,,,,,,,
