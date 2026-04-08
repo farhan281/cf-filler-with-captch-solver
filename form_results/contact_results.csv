@@ -2233,3 +2233,4 @@ https://hoffman.com,Failed,No contact form detected,Loaded,18.1,Opened,Not found
 https://www.janbaskdigitaldesign.com/contact-us,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,16.1,Opened,Found,5,"full_name,company,phone,email,message","first_name,last_name,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
 https://www.socialstatus.io/contact/,Skipped,Page load timeout,Timeout,,,,,,,,,,
 https://inhousestrategy.com/contact/,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,4.8,Opened,Found,5,"first_name,last_name,email,phone,message","full_name,company,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
+https://www.localbiznetwork.com/contact.php,Skipped,reCAPTCHA v2 rate-limited at pre-submit,Loaded,8.0,Opened,Found,4,"full_name,email,phone,message","first_name,last_name,company,website,job_title,subject,budget,address",,Rate-limited at pre-submit: reCAPTCHA v2,,
