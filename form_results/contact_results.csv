@@ -2242,3 +2242,5 @@ https://www.profitablemedia.com/contact/,Skipped,Page load timeout,Timeout,,,,,,
 https://www.sjsu.edu/contact/index.php,Failed,,Loaded,11.4,Opened,Found,4,"full_name,email,message,select:Please select a category for your question","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Image OCR failed at pre-submit,,
 http://www.stephenz.com/about-us/,Failed,No contact form detected,Loaded,4.6,Opened,Not found,,,,,,,
 https://www.convertly.com,Failed,No contact form detected,Loaded,5.8,Opened,Not found,,,,,,,
+https://nika.agency/contact/,Failed,Submitted but no confirmation detected,Loaded,5.6,Opened,Found,4,"subject,full_name,email,message","first_name,last_name,phone,company,website,job_title,budget,address",,Not present,"Clicked: 'Submit
+Submit' (score=95)",No confirmation
