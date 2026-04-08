@@ -2294,3 +2294,5 @@ Website Edits / Updates
 Search Engine Optimization (SEO)
 Other services,message","first_name,last_name,phone,company,website,job_title,subject,budget,address",,Not present,Clicked: 'Send' (score=120),No confirmation
 https://www.frontendtech.com/contact/,Failed,Submitted but no confirmation detected,Loaded,3.1,Opened,Found,7,"full_name,email,company,phone,website,select:menu-305,message","first_name,last_name,job_title,subject,budget,address",,Not present,Clicked: 'Request a Quote' (score=105),No confirmation
+https://getawebdesign.com,Skipped,"unknown error: net::ERR_SSL_PROTOCOL_ERROR
+  (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
