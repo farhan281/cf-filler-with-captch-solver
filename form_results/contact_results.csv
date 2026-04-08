@@ -2328,3 +2328,6 @@ https://www.sanjose.org/contact,Partial,Submitted but missing:  name,Loaded,10.0
 https://opentechmedia.com,Failed,No contact form detected,Loaded,11.7,Opened,Not found,,,,,,,
 https://fwamarketing.com,Skipped,"unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=146.0.7680.177)",NetworkError,,,,,,,,,,
+https://www.cadent.com/#contact,Failed,Submitted but no confirmation detected,Loaded,11.5,Opened,Found,7,"first_name,last_name,email,company,select:location,select:i_m_interested_in___,subject","full_name,phone,website,job_title,message,budget,address",,Not present,Clicked: 'Submit' (score=105),No confirmation
+https://www.gummicube.com/#contact,Success,Verified thank-you / redirect,Loaded,2.0,Opened,Found,4,"full_name,email,company,message","first_name,last_name,phone,website,job_title,subject,budget,address",,Not present,Clicked: 'SEND' (score=105),Success detected
+https://www.tdoconsulting.com/,Failed,No contact form detected,Loaded,4.0,Opened,Not found,,,,,,,
